@@ -1,0 +1,210 @@
+
+.cardContainer{
+    width: 70%;
+    max-width:1500px;
+    min-height: auto;
+    max-height: 70vh;
+    position:fixed;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%,-40%);
+    background:var(--black);
+    z-index: 100;
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.closeIcon{
+    background:var(--red);
+    display:flex;
+    justify-content:flex-end;
+    padding: .5rem 1rem;
+    opacity: .5;
+}
+.cardContainer svg{
+    font-size: 2rem;
+    cursor:pointer;
+    fill:rgba(255, 255, 255, .5);
+    align-self: flex-end;
+}
+.cardContainer svg:hover{
+    fill:rgba(255, 255, 255, 1);
+}
+
+.cardContainer .cardInfoContainer{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    overflow-y:scroll;
+    padding: 1rem 2rem;
+    position: relative;
+}
+/* width */
+.cardContainer .cardInfoContainer::-webkit-scrollbar {
+    width: 2rem;
+  }
+  
+  /* Track */
+  .cardContainer .cardInfoContainer::-webkit-scrollbar-track {
+    background-color:rgb(211, 96, 96,.5);
+    opacity: .1;
+  }
+  
+  /* Handle */
+  .cardContainer .cardInfoContainer::-webkit-scrollbar-thumb {
+    background: rgb(211, 96, 96,.8);
+  }
+  
+  /* Handle on hover */
+  .cardContainer .cardInfoContainer::-webkit-scrollbar-thumb:hover {
+    background: rgb(211, 96, 96,1);
+  }
+
+
+.cardContainer .cardInfoContainer .infoTitle{
+    width: 70%;
+    
+}
+.cardContainer .cardInfoContainer .infoTitle h2{
+    font-size: 2rem;
+    color:var(--red);
+}
+.cardContainer .cardInfoContainer .infoTitle .names{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+}
+.cardContainer .cardInfoContainer .infoTitle .names h3{
+    color:var(--orange);
+    font-variant: small-caps;
+    font-weight: 400;
+}
+.cardContainer .cardInfoContainer .infoTitle .groupSynonyms{
+    width: 60%;
+    max-width: 500px;
+    display:flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color:var(--gray);
+    opacity: 0.5;
+    font-size: .7rem;
+    margin-left: 2rem;
+}
+.cardContainer .cardInfoContainer .infoType{
+   display:flex;
+   flex-direction: column;
+   gap: .5rem;
+    margin-bottom: 1rem;
+}
+.cardContainer .cardInfoContainer .infoType p{
+    color:var(--orange);
+    font-size: 1.25rem;
+    font-variant: small-caps;
+}
+
+.cardContainer .cardInfoContainer .infoType p span{
+    color:var(--gray);
+    font-size: .8rem;
+    margin-left:.25rem;
+
+}
+.cardContainer .cardInfoContainer  .infoTime{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+.cardContainer .cardInfoContainer  .infoTime p{
+    color:var(--orange);
+    font-size: 1.25rem;
+    font-variant: small-caps;
+}
+.cardContainer .cardInfoContainer  .infoTime p span{
+    color:var(--gray);
+    font-size: .8rem;
+    margin-left:.25rem;
+}
+.cardContainer .cardInfoContainer .tags{
+
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cardContainer .cardInfoContainer .tags h3{
+    color:var(--orange);
+    font-variant: small-caps;
+    font-weight: 400;
+}
+.cardContainer .cardInfoContainer .tags div{
+    width: 75%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 100;
+     
+}
+.cardContainer .cardInfoContainer .tags div span{
+    font-size: .8rem;
+    background-color: var(--red);
+    color:var(--gray);
+    padding:.5rem .25rem;
+    border-radius: 2.5px;
+}
+.cardContainer .infoPicture{
+
+    position:absolute;
+    top: 5%;
+    right: 2.5%;
+}
+.cardContainer .infoPicture img{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 5px;
+    border:3px solid var(--gray);
+}
+@media screen and (max-width:800px){
+    
+.cardContainer{
+    width: 90%;
+}
+.cardContainer .cardInfoContainer .infoTitle{
+    width: 100%;
+    
+}
+.cardContainer .cardInfoContainer .tags div{
+    width: 100%;
+  
+     
+}
+.cardContainer .infoPicture{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: auto;
+    right: auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.cardContainer .infoPicture img{
+    width: 100%;
+    height: 100%;
+   
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 5px;
+    border:3px solid var(--gray);
+}
+}

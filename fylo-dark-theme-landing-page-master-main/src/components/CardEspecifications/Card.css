@@ -1,0 +1,55 @@
+
+.card{
+    width:40%;
+    min-width: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:1rem;
+}
+.card figure{
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.card figure img{
+    width: 100%;
+}
+.card .cardInfo{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+.card .cardInfo h3{
+    color:var(--White);
+}
+.card .cardInfo p{
+    color:var(--White);
+    opacity: .6;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 500px){
+    
+.card{
+    width:90%;
+
+}
+.card .cardInfo h3{
+    color:var(--White);
+    font-size: 1.5rem;
+}
+.card .cardInfo p{
+
+    font-size: 1rem;
+
+}
+    
+}

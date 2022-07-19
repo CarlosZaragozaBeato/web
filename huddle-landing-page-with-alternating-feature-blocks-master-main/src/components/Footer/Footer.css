@@ -1,0 +1,123 @@
+
+.footer{
+    display:flex;
+    gap:1rem;
+    flex-direction: column;
+    width: 100%;
+    padding:5rem 2.5rem 2.5rem 2.5rem;
+    background-color:var(--veryDarkCyan);
+    color:var(--veryPaleCyan);
+}
+.firstPartFooter{
+    display:flex;
+    align-items: center;
+}
+.firstPartFooter h2{
+    font-size: 2rem;
+}
+.footer .secondPartFooter{
+    display:flex;
+    justify-content:space-between;
+    gap: 2rem;
+    min-height: 20vh;
+
+}
+.footer .firstListFooter{
+    max-width: 300px;     
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer .firstListFooter .childFirstListFooter{
+    display:flex;
+    gap: .75rem;
+    font-size: .9rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.footer .firstListFooter .childFirstListFooter:hover{
+    opacity: 1;
+}
+.footer .groupList {
+    display: flex;
+    min-width: 250px;
+    justify-content: space-between;
+    
+}
+.footer .groupList .groupListChild ul{
+    display:flex;
+    flex-direction: column; 
+    gap: 1rem;
+    list-style: none;
+}
+.footer .groupList .groupListChild ul li{
+    opacity: .7;
+    cursor: pointer;
+}
+.footer .groupList .groupListChild ul li:hover{
+    opacity: 1;
+}
+.socialContainer{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.socialContainer .iconContainer{
+    display:flex;
+    gap: 1rem;
+}
+.socialContainer .iconContainer svg{
+    font-size:2.5rem;
+    border:1px solid white;color:white;opacity: .7;
+    padding:0.4rem;
+    border-radius: 100%;
+    cursor: pointer;
+    transition:all 150ms ease-in-out;
+}
+.socialContainer .iconContainer svg:hover{
+    color:var(--Pink);
+    border-color:var(--Pink);
+    opacity: 1;
+}
+.socialContainer p{
+    opacity: .7;
+    font-size: .9rem;
+    cursor: pointer;
+    font-style: italic;
+}
+.socialContainer p:hover{
+    opacity: 1;
+}
+@media screen and (max-width:800px){
+    .footer{
+        gap: 2rem;
+    } 
+    .footer .secondPartFooter{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .footer .secondPartFooter .groupList{
+        justify-content: start;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+    .socialContainer .iconContainer svg{
+        padding: 0.25;
+        font-size: 1.75rem;
+    }
+    .socialContainer{
+        align-self: center;
+        gap: 1rem;
+        align-items: center;
+        text-align:center;
+        width: 100%;
+    }
+    .socialContainer p{
+        font-size:.7rem
+    }
+}
+@media screen and (max-width:500px){
+    .footer .secondPartFooter .groupList{
+        flex-direction: column;
+    }
+}

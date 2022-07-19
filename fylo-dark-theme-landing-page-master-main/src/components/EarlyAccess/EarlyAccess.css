@@ -1,0 +1,107 @@
+
+.EarlyAccessCard{
+    padding: 4% 5%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.EarlyAccessCard h2{
+    color:var(--White);
+    font-size: 2rem;
+}
+.EarlyAccessCard p{
+    width: 80%;
+    margin-top: 1rem;
+    color:var(--White);
+    opacity: 0.7;
+}
+.EarlyAccessCard .form{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    gap:1rem;
+    margin-top:2rem;
+
+
+}
+.EarlyAccessCard form label{
+    width: 70%;
+    
+ 
+}
+.EarlyAccessCard form label .inputMail{
+    width: 100%;
+    min-height:3rem;
+    max-width: 600px;
+    min-width: 200px;
+    background:var(--White);
+    border-radius: 20px;
+    padding: .25rem 1rem;
+    outline:none;
+    border: none;
+}
+.EarlyAccessCard form button{
+    width: 30%;
+    min-width:160px;
+    background:var(--grd);
+    opacity: 0.7;
+    color:var(--White);
+    border-radius: 50px;
+    padding: .75rem .5rem;
+    cursor: pointer;
+    transition:opacity 150ms linear;
+}
+.EarlyAccessCard form button:hover{
+    opacity: 1;
+}
+
+.EarlyAccessCard form label .errorInvisible{
+  
+  position: absolute;
+    max-width: 200px;
+  opacity: 0;
+}
+.EarlyAccessCard form label .errorVisible{
+    max-width: 200px;
+    position: absolute;
+    opacity: 1;
+}
+.EarlyAccessCard form label p{
+    transition:all 200ms linear;
+    color:var(--lightRed);
+}
+@media screen and (max-width:500px){
+    .EarlyAccessCard .form{
+        flex-direction: column;
+    
+    }
+    .EarlyAccessCard form label {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .EarlyAccessCard form label .inputMail{
+        width: 100%;
+    }
+    .EarlyAccessCard form button{
+        width: 100%;
+    }
+    .EarlyAccessCard form label p{
+        transition:opacity 300ms linear;
+  
+    }
+    .EarlyAccessCard form label .errorInvisible{
+  
+        position: relative;
+        height:0;
+      }
+      .EarlyAccessCard form label .errorVisible{
+        position: relative;
+        height:100%;
+      
+      }
+}

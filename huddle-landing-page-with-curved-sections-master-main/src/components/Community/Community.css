@@ -1,0 +1,26 @@
+.buildCommunity{
+    width:100%;
+    min-height:30vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    gap:.75rem;
+    text-align: center;
+}
+.buildCommunity h3{
+    font-size: 2rem;
+    color:var(--veryDarkCyan);
+}
+.buildCommunity button{
+    min-width: 200px;
+    padding:.75rem 0;
+    background-color:var(--Pink);
+    color:var(--veryPaleBlue);
+    border-radius: 50px;
+}
+@media screen and (max-width:500px){
+    .buildCommunity h3{
+        font-size: 1.5rem;
+    }
+}

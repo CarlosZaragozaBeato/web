@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+:root{
+    --White: hsl(0, 0%, 100%);
+    --darkGray: hsl(0, 0%, 55%);
+    --Black: hsl(0, 0%, 0%);
+    --veryDarkGray: hsl(0, 0%, 41%);
+
+    --font_1:'Alata', sans-serif;
+    --font_2:'Josefin Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+body{
+    width:100%;
+    min-height: 100vh;
+}
+
+/*Header*/
+.header{
+    width: 100%;
+    min-height:100vh;
+    background-image:url("../images/mobile/image-hero.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+
+}
+/*First Part Header*/
+.firstPartHeader{
+    width: 100%;
+
+  
+}
+
+.barHeader{
+    width: 100%;
+    min-height: 10vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.firstPartHeader .logo{
+    padding-left:2rem ;
+    min-width: 150px;
+    width: 80%;
+
+}
+.nav{
+    width: auto;
+    height: 100%;
+    z-index: 110;
+    margin-right:1rem ;
+}
+
+.nav figure img{
+    min-width: 30px;
+
+}
+.bar{
+    position:absolute;
+    display: none;
+    
+    transform: translateY(-30%);
+    top: 40%;
+    left:0;
+
+
+    list-style: none;
+}
+.burgerMenu{
+    cursor: pointer;
+}
+
+.bar  li a{
+    text-decoration: none;
+    color:var(--White);
+    font-family: var(--font_2);
+    font-size:2rem;
+    text-transform: uppercase;
+}
+.visible{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    margin-left:2rem;
+    
+
+}
+.barVisible{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;left: 0;
+    background-color: var(--Black);
+    display:flex;
+    align-items:start;
+    padding:2rem 0;
+}
+
+
+/*Second Part Header*/
+.secondPartHeader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top:25vh;
+}
+.titleContainer{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid var(--White);
+    border-left-width: 3px;
+    padding:1rem 2rem;
+}
+.titleContainer .title{
+
+
+    font-size:2.9rem;
+    color:var(--White);
+    font-family: var(--font_2);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/*Main*/
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+/*first Article*/
+
+.firstArticle{
+    width: 80%;
+    height: 100%;
+    margin-top: 5rem;
+   
+}
+.firstPartArticle1{
+    width: 100%;
+    height: 100%;
+   
+}
+.firstArticleImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.firstArticleImage img {
+        width:100%;
+        height: 100%;
+   
+}
+.firstArticle .secondPartArticle1{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap:1rem;
+    margin-top:2rem;
+    text-align: center;
+
+    
+}
+.firstArticle .secondPartArticle1    .titleFirstArticle{
+    font-family: var(--font_2);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+.firstArticle .secondPartArticle1 .infoFirstArticle{
+    font-family: var(--font_1);
+    line-height: 1.6;
+    width:90%;
+    color:var(--veryDarkGray);
+}
+
+/*Second Article */
+
+.secondArticles{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    gap:5rem;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content:center;
+    
+}
+.firstPartSecondArticle{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.firstPartSecondArticle .titleSecondArticle{
+    text-transform: uppercase;
+    font-family: var(--font_2);
+    font-size:1.8rem;
+    letter-spacing: .1rem;
+}
+.secondPartHeader2{
+    width: 90%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+}
+.firstCard{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7),rgba(0,0,0,0.05)),url("../images/mobile/image-deep-earth.jpg");
+}
+.secondCard{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7),rgba(0,0,0,0.05)),url("../images/mobile/image-night-arcade.jpg");
+}
+.thirdCard{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7),rgba(0,0,0,0.05)),url("../images/mobile/image-soccer-team.jpg");
+}
+.fourthCard{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7),rgba(0,0,0,0.05)),url("../images/mobile/image-grid.jpg");
+}
+.fifthCard{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.75),rgba(0,0,0,0.05)),url("../images/mobile/image-from-above.jpg");
+}
+.sixthCard{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/mobile/image-pocket-borealis.jpg");
+}
+.seventhCard{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/mobile/image-curiosity.jpg");
+}
+.eightCard{
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/mobile/image-fisheye.jpg");
+}
+.card{
+    width:100%;
+    min-height: 15vh;
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    align-items: flex-end;
+    padding:1rem;
+}
+.card .titleCard{
+    font-size:1.25rem;
+    color:var(--White);
+    font-family: var(--font_2);
+    text-transform: uppercase;
+}
+
+.linkSecondArticle{
+    width: 50%;
+    border: 1px solid var(--Black);
+    text-align:center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    font-family:var(--font_1);
+    color:var(--Black);
+    transition:background 200ms ease-in-out,
+                color 200ms ease-in-out;
+
+}
+.linkSecondArticle:hover{
+    background-color: var(--Black);
+    color:var(--White);
+}
+
+/*Footer*/
+
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Black);
+    margin-top:5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:3rem;
+    padding:3rem 0;
+}
+.firstPartFooter{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    align-items: center;
+    justify-content:center;
+    text-align:center;
+}
+.barFooter{
+    display:flex;
+    flex-direction:column;
+    gap: 2vh ;
+    list-style: none;
+
+}
+.barFooter li a{
+    color:var(--White);
+    font-size:1.1rem;
+    font-family: var(--font_1);
+    text-decoration:none;
+   
+}
+.secondPartFooter{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1.5rem;
+    flex-direction:column;
+}
+.socialMedia{
+    display:flex;
+    gap: 1rem;
+    justify-content:center;
+    align-items:center;
+    
+}
+.secondPartFooter .copy{
+
+    color:var(--darkGray);
+    font-family: var(--font_2);
+    font-size:1.1rem;
+}
+
+
+@media screen and (min-width: 1240px){
+
+    /*header*/
+    .header{
+
+        background-image:url("../images/desktop/image-hero.jpg");
+
+    
+        background-position: right;
+    padding-top: 1.5rem;
+    
+    }
+    /*First Part Header*/
+    .firstPartHeader{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+    }
+    
+    .barHeader{
+        width: 80%;
+      
+    }
+    .firstPartHeader .logo{
+        min-width: 150px;
+        width: 200px;
+    }
+    .nav{
+        width: auto;   
+    }
+    
+    .nav figure {
+        display:none;
+    }
+    .bar{
+        position:relative;
+        display: flex;
+        justify-content: right;
+        gap:2rem;
+        transform: translateY(0%);   
+    }
+    
+    .bar  li a{
+        font-family: var(--font_1);
+        font-size:1.25rem;
+        text-transform: none;
+        position: relative
+    }
+
+    .bar li a:before{
+        content:"";
+        width:0%;
+        height:5px;
+        background-color:var(--White);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition:all 200ms linear;
+    }
+
+    .bar li a:hover::before{
+            width:100%;
+    }
+    
+    /*Second Part Header*/
+   
+    .titleContainer{
+        width: 80%;
+        justify-content: left;
+        border: none;
+    }
+    .titleContainer .title{
+        width: 60%;
+        font-size:4rem;
+        border: 1px solid var(--White);
+        border-left:5px solid var(--White);
+        padding:1rem 2rem;
+    }
+
+
+/*first Article*/
+
+.firstArticle{
+    width: 80%;
+    height: 100%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction:row;
+}
+
+
+
+.firstArticle .secondPartArticle1{
+
+ 
+    align-items: flex-start;
+    align-self: flex-end;
+ 
+    margin-top:0rem;
+    text-align: left;
+    padding: 2.5rem;
+ 
+    transform:translateX(-20%) translateY(10%);
+    background-color: var(--White);
+}
+
+
+/*Second Article*/
+.secondArticles{
+    position:relative;
+}
+.secondPartHeader2 {  
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "firstCard secondCard thirdCard fourthCard"
+      "fifthCard sixthCard seventhCard eightCard";
+  }
+
+  .firstCard { 
+      grid-area: firstCard; 
+      background-image: linear-gradient(180deg, rgba(0,0,0,0.55),rgba(0,0,0,0.4)),url("../images/desktop/image-deep-earth.jpg");
+    }
+    .firstCard:hover{
+        background-image:  linear-gradient(180deg, rgba(245, 222, 179, 0.55),rgba(245, 222, 179, 0.4)),url("../images/desktop/image-deep-earth.jpg");
+        
+    } 
+  .secondCard { 
+      grid-area: secondCard; 
+      background-image:  linear-gradient(180deg, rgba(0,0,0,0.55),rgba(0,0,0,0.4)),url("../images/desktop/image-night-arcade.jpg");
+    }
+    .secondCard:hover{
+        background-image:  linear-gradient(180deg, rgba(245, 222, 179, 0.55),rgba(245, 222, 179, 0.4)),url("../images/desktop/image-night-arcade.jpg");
+        
+    } 
+  .thirdCard { 
+      grid-area: thirdCard;
+      background-image:  linear-gradient(180deg, rgba(0,0,0,0.55),rgba(0,0,0,0.4)),url("../images/desktop/image-soccer-team.jpg");
+     }
+     .thirdCard:hover{
+        background-image:  linear-gradient(180deg, rgba(245, 222, 179, 0.55),rgba(245, 222, 179, 0.4)),url("../images/desktop/image-soccer-team.jpg");
+        
+    } 
+  
+  .fourthCard {
+       grid-area: fourthCard; 
+       background-image: linear-gradient(180deg, rgba(0,0,0,0.55),rgba(0,0,0,0.4)),url("../images/desktop/image-grid.jpg");
+    }
+    .fourthCard:hover{
+        background-image:  linear-gradient(180deg, rgba(245, 222, 179, 0.55),rgba(245, 222, 179, 0.4)),url("../images/desktop/image-grid.jpg");
+        
+    } 
+  .fifthCard {
+       grid-area: fifthCard; 
+       background-image:  linear-gradient(180deg, rgba(0,0,0,0.55),rgba(0,0,0,0.4)),url("../images/desktop/image-from-above.jpg");
+    }
+    .fifthCard:hover{
+        background-image:  linear-gradient(180deg, rgba(245, 222, 179, 0.55),rgba(245, 222, 179, 0.4)),url("../images/desktop/image-from-above.jpg");
+        
+    } 
+  .sixthCard {
+       grid-area: sixthCard;
+       background-image:  linear-gradient(180deg, rgba(0,0,0,0.55),rgba(0,0,0,0.4)),url("../images/desktop/image-pocket-borealis.jpg"); 
+    }
+    .sixthCard:hover{
+        background-image:  linear-gradient(180deg, rgba(245, 222, 179, 0.55),rgba(245, 222, 179, 0.4)),url("../images/desktop/image-pocket-borealis.jpg");
+        
+    } 
+  .seventhCard { 
+      grid-area: seventhCard;
+      background-image:  linear-gradient(180deg, rgba(0,0,0,0.55),rgba(0,0,0,0.4)),url("../images/desktop/image-curiosity.jpg");
+     }  
+    .seventhCard:hover{
+        background-image:  linear-gradient(180deg, rgba(245, 222, 179, 0.55),rgba(245, 222, 179, 0.4)),url("../images/desktop/image-curiosity.jpg");
+        
+    } 
+  
+    .eightCard {
+       grid-area: eightCard; 
+       background-image:  linear-gradient(180deg, rgba(0,0,0,0.55),rgba(0,0,0,0.4)),url("../images/desktop/image-fisheye.jpg");
+    }  
+    .eightCard:hover{
+        background-image:  linear-gradient(180deg, rgba(245, 222, 179, 0.55),rgba(245, 222, 179, 0.4)),url("../images/desktop/image-fisheye.jpg");
+        
+    } 
+    .card:hover .titleCard{
+        color:var(--Black);
+    } 
+    .card{
+          min-height: 50vh; 
+          cursor: pointer;
+          transition:all 200ms linear;
+    }
+ 
+
+
+    .secondArticles{
+        margin-top: 10rem;      
+    }
+    .firstPartSecondArticle{
+        width: 80%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        
+     
+    }
+    .linkSecondArticle{
+        width:auto;
+        position:absolute;
+        top: 0;
+        right: 10%;
+        padding:.5rem 2rem;
+    }
+    
+    /*Footer*/
+    .footer{
+     
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        flex-direction:row;
+        padding:3rem ;
+    }
+    .firstPartFooter{
+        align-items: start;
+        justify-content:center;
+        text-align:left;
+  
+    }
+    .barFooter{
+        flex-direction:row; 
+    }
+
+    .secondPartFooter{
+      
+       
+        align-items:flex-end;
+        gap:2rem;
+     
+      
+    }
+  
+    .barFooter li a{
+        position: relative;
+
+    }
+    .barFooter li a:before{
+        content:"";
+        width:0%;
+        height:1px;
+        background-color:var(--White);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition:all 200ms linear;
+    }
+
+    .barFooter li a:hover::before{
+            width:100%;
+    }
+    .socialMedia figure{
+        position: relative;
+        cursor: pointer;
+    }
+    .socialMedia figure:before{
+        content:"";
+        width:0%;
+        height:5px;
+        background-color:var(--White);
+        position: absolute;
+        top: 105%;
+        left: 0;
+        transition:all 200ms linear;
+    }
+    .socialMedia figure:hover::before{
+  
+        width: 100%;
+    }
+ 
+    
+
+}

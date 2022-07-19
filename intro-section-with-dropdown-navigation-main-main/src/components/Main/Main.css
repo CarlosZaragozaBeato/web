@@ -1,0 +1,131 @@
+
+.mainContainer{
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    gap:4rem;
+}
+
+.mainContainer .firstPart{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.mainContainer .firstPart .info{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.firstPart h1{
+    width:100%;
+    max-width: 500px;
+    font-size: 4rem;
+    letter-spacing:.1rem;
+}
+.firstPart p{
+    width: 70%;
+    color:var(--mediumGray);
+}
+.firstPart button{
+    max-width: 150px;
+    background-color: var(--almostBlack);
+    padding:.75rem 0;
+    color:var(--almostWhite);
+    font-weight: 800;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: .9rem;
+    border: 2px solid transparent;
+    margin-top: 1rem;
+}
+.firstPart button:hover{
+    background-color: var(--almostWhite);
+    color:var(--almostBlack);
+    border-color:var(--almostBlack);
+}
+.mainContainer picture{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer picture img{
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+}
+.logosContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 1rem;
+}
+.logosContainer figure{
+    width: 100%;
+    height:50%;
+
+    max-width: 80px;
+    max-height: 40px;
+}
+.logosContainer figure img{
+    width: 100%;
+}
+@media screen and (max-width:1000px){
+ 
+    .mainContainer .firstPart{
+        gap: 1rem;
+        margin-top: 0rem;
+    }
+    .mainContainer .firstPart h1{
+        font-size:3rem;
+    }
+    .mainContainer .firstPart p{
+        width: 80%;
+    }
+}
+@media screen and (max-width:800px){
+    .mainContainer{
+        width:100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .mainContainer .firstPart{
+        width:90%;
+    }
+    .mainContainer .firstPart .info{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .mainContainer .firstPart .info h1{
+        font-size: 2rem;
+    }
+
+    .mainContainer .firstPart p{
+        width: 100%;
+    }
+    .mainContainer .firstPart button{
+        min-width: 150px;
+        margin-top: 0;
+    }
+    .mainContainer picture{
+        width: 100%;
+        max-width: auto;
+        min-width: auto;
+    }
+    .logosContainer figure{
+        width:60px;
+        height:30px;
+        
+        
+    }
+}

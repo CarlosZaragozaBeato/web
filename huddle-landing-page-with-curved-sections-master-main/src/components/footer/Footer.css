@@ -1,0 +1,194 @@
+.footer{
+    width: 100%;
+    background-image: url("../../images/bg-footer-top-desktop.svg");
+    background-repeat:no-repeat;
+    background-position:top ;
+    background-size: contain;
+    padding: 10% 0 0 0; 
+    margin-top:5rem;
+}
+.footer .footerContainer{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:2rem;
+    background-color: var(--veryDarkCyan);
+    padding:10% 5%;
+    color:var(--veryPaleBlue);
+   
+}
+.footer .footerContainer .firstPartContainer{
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer .footerContainer .firstPartContainer .logoFooter{
+    display: flex;
+    gap: .5rem;
+    align-items:center;
+}
+.footer .footerContainer .firstPartContainer .logoFooter h3{
+    font-size: 2rem;
+}
+.footer .footerContainer .firstPartContainer p{
+    max-width: 400px;
+    opacity: .7;
+    cursor: pointer;
+}
+.footer .footerContainer .firstPartContainer p:hover{
+    opacity: 1;
+}
+.footer .footerContainer .firstPartContainer .contact{
+    display: flex; align-items:center;
+    gap: .5rem;
+}
+.footer .footerContainer .firstPartContainer .contactGroup{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction:column;
+    gap: .25rem;
+}
+.footer .footerContainer .firstPartContainer .socialIcons{
+    display: flex;
+    gap: 1rem;
+    opacity: .8;
+    margin-top:2rem
+}
+.footer .footerContainer .firstPartContainer .socialIcons svg{
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+.footer .footerContainer .firstPartContainer .socialIcons .facebook:hover{
+    color:#538cff;
+    opacity: 1;
+}
+.footer .footerContainer .firstPartContainer .socialIcons .instagram:hover{
+    color:#E1306C;
+    opacity: 1;
+}
+.footer .footerContainer .firstPartContainer .socialIcons .twitter:hover{
+    color:#1DA1F2;
+    opacity: 1;
+}
+    
+.footer .footerContainer .secondPartContainer{
+    width: 40%;max-width: 500px;
+    min-width: 300px;
+}
+.footer .footerContainer .secondPartContainer{
+    width: 40%;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    min-width: 300px;
+}
+.footer  .footerContainer .secondPartContainer .newsletter h3{
+    font-size: 1.5rem;
+    opacity: .7;
+    cursor:pointer;
+}
+.footer .footerContainer .secondPartContainer .newsletter p{
+    font-size: .9rem;
+    opacity: .7;
+    cursor:pointer;
+    width:80%;
+    margin-top: .5rem;
+    line-height: 1.5;
+}
+.footer .footerContainer .secondPartContainer .newsletter p:hover{
+    opacity: 1;
+}
+.footer .secondPartContainer .newsletter h3:hover{
+    opacity: 1;
+}
+.footer .footerContainer .secondPartContainer .form{
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+ .errorInvisible{
+    display:none;
+}
+.footer .footerContainer .secondPartContainer .form label{
+    width: 60%;
+    position:relative;
+}
+.footer .footerContainer .secondPartContainer .form  label .inputMail{
+    width: 100%;
+    min-height:3rem;
+    max-width: 600px;
+    min-width: 200px;
+    background:var(--veryPaleBlue);
+    padding: .25rem 1rem;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+}
+.footer .footerContainer .secondPartContainer .form label .errorInvisible{
+    display:none;
+
+  }
+  .footer .footerContainer .secondPartContainer .form label .errorVisible{
+    max-width: 200px;
+    position: absolute;
+    margin-top:.75rem;
+
+}
+.footer  .footerContainer .secondPartContainer .form label p{
+
+    color:var(--lightRed);
+}
+  .footer  .footerContainer .secondPartContainer .form button{
+    width: 30%;
+    min-width:100px;
+    background:var(--Pink);
+    opacity: 0.7;
+    color:var(--veryPaleBlue);
+    padding: .75rem .5rem;
+    cursor: pointer;
+    transition:opacity 150ms linear;
+    border-radius: 5px;
+}
+.footer .footerContainer  .secondPartContainer .form button:hover{
+    opacity: 1;
+}
+@media screen and (max-width:700px){
+    .footer{
+        background-image: url("../../images/bg-footer-top-mobile.svg");
+    }
+    .footer .footerContainer  {
+        flex-direction: column-reverse;
+    }
+    .footer .footerContainer .firstPartContainer  {
+        width: 100%;
+    }
+    .footer .footerContainer .firstPartContainer  p{
+        width: 100%;
+        font-size: .9rem;
+    }
+    .footer .footerContainer .secondPartContainer{
+        width: 100%;
+    }
+    .footer .footerContainer .secondPartContainer .newsletter p{
+        width: 100%;
+        font-size: .9rem;
+    }   
+    .footer .footerContainer .secondPartContainer .form{
+        flex-direction: column;
+        align-items: end;
+    }
+    .footer .footerContainer .secondPartContainer .form  label{
+        width: 100%;
+    }
+    .footer .footerContainer .secondPartContainer .form  label .inputMail{
+        width: 100%;
+    }
+    .footer .footerContainer .secondPartContainer .form  button{
+        width: 50%;
+    }
+
+}

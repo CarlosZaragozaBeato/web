@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+  /**Colors**/
+  /**Primary**/
+  --strongCyan: hsl(171, 66%, 44%);
+  --lightBlue: hsl(233, 100%, 69%);
+
+  /*Neutral */
+  --darkGrayishBlue: hsl(210, 10%, 33%);
+  --grayishBlue: hsl(201, 11%, 66%)
+}
+
+*,
+*:after,
+*:before{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size:18px;
+}
+body{
+  width: 100%;
+  min-height:100vh;
+}
+.section{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  
+}
+.article{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.titleArticle {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: .75rem;
+  margin-top:10vh;
+  margin-bottom: 7vh;
+}
+
+.titleArticle h2{
+  font-size: 2rem;
+  letter-spacing: .1rem;
+}
+.titleArticle p{
+  font-size: .8rem;
+  width: 70%;
+  letter-spacing: .025rem;
+  line-height: 1.7;
+  color:var(--grayishBlue);
+}
+@media screen and (max-width:768px) {
+  .titleArticle {
+    width: 90%;
+    margin-top:10vh;
+}
+  .titleArticle p{
+    width: 90%;
+}
+.titleSecondArticle{
+  margin-top:0vh;
+}
+}

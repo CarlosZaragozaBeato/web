@@ -1,0 +1,146 @@
+
+.footer{
+    width: 100%;
+    background-color:var(--darkBlue_footer_background);
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    gap: 1rem;
+    padding: 0 5rem;
+    padding-top: 12.5rem;
+    padding-bottom:5rem;
+    color:var(--White);
+}
+.footer .footerLogo{
+    width: 120px;
+    height: 55px;
+}
+.footer .footerLogo img{
+    width: 100%;
+}
+.footer .secondPartFooter{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content:space-between;
+    
+}
+.footer .secondPartFooter .location{
+    width: 50%;
+    min-width: 200px;
+    max-width: 300px;
+    display: flex;
+    gap: .5rem;
+    align-items: start;
+    margin-right: 10vh;
+    opacity: 0.7;
+    transition:opacity 200ms linear;
+    cursor: pointer;
+}
+.footer .secondPartFooter .location:hover{
+    opacity: 1;
+}
+.footer .secondPartFooter .location figure{
+    width: 20px;
+    height: 20px;
+}
+.footer .secondPartFooter .location figure img{
+    width: 100%;
+}
+
+
+.footer .secondPartFooter .firstListFooter ul{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer .secondPartFooter .firstListFooter ul li{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    opacity: 0.7;
+    transition:opacity 200ms linear;
+    cursor: pointer;
+    
+}
+.footer .secondPartFooter .firstListFooter ul li:hover{
+    opacity: 1;
+}
+.footer .secondPartFooter .listsFooter{
+    display: flex;
+    gap: .5rem;
+}
+
+.footer .secondPartFooter .secondListFooter ul{
+    min-width: 100px;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    transition:opacity 200ms linear;
+    cursor: pointer;
+}
+.footer .secondPartFooter .secondListFooter ul li{
+    opacity: 0.7;
+}
+.footer .secondPartFooter .secondListFooter ul li:hover{
+    opacity: 1;
+}
+.footer .secondPartFooter .thirdListFooter{
+
+}
+.footer .secondPartFooter .thirdListFooter ul{
+    min-width: 100px;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    transition:opacity 200ms linear;
+    cursor: pointer;
+}
+.footer .secondPartFooter .thirdListFooter ul li{
+    opacity: 0.7;
+}
+.footer .secondPartFooter .thirdListFooter ul li:hover{
+    opacity: 1;
+}
+.footer .socialIcon{
+    display:flex;
+    gap: 1rem;
+}
+.footer .socialIcon figure{
+    width: 30px;
+    height: 30px;
+
+}
+.footer .socialIcon figure img{
+    width: 100%;
+}
+@media screen and (max-width:950px){
+    
+.footer{
+    padding: 0 2rem;
+    padding-top: 7.5rem;
+    padding-bottom:2.5rem;
+}
+    .secondPartFooter{
+        flex-direction: column;
+    
+        gap:2rem;
+    }
+    .footer .secondPartFooter .location{
+        min-width: auto;
+        max-width: auto;
+        width: 100%;
+    }
+    .footer .secondPartFooter .socialIcon{
+        align-self: center;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:500px){
+    .footer .secondPartFooter .listsFooter{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

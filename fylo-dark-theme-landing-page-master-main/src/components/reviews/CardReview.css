@@ -1,0 +1,59 @@
+
+.cardReview{
+    width: 33%;
+    max-width: 450px;
+    background-color:var(--darkBlue_testimonials_background);
+    border-radius:5px;
+    padding: 2rem;
+    position:relative;
+    
+}
+
+.cardReview:first-of-type::before{
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: -3.5vh;
+    left: -1vw;
+    z-index: -10;
+    background-image:url("../../images/bg-quotes.png"); 
+    background-repeat:no-repeat;
+}
+.cardReview .profileContainer {
+    display:flex;
+    align-items:center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.cardReview .profileContainer figure {
+    width: 35px;
+    height:35px;
+}
+.cardReview .profileContainer figure img{
+    width:100%;
+    border-radius:100%;
+}
+.cardReview p{
+    line-height: 1.6;
+    color:var(--White);
+    opacity: 0.8;
+    margin-top: .5rem;
+    font-size:1.1rem;
+   
+}
+.cardReview .profileContainer .infoCardReview h2{
+    color:var(--White);
+}
+.cardReview .profileContainer .infoCardReview h3{
+    margin-top:.5rem;
+    color:var(--White);
+    opacity:.5;
+}
+@media screen and (max-width:800px){
+
+    .cardReview{
+        width: 90%;
+    }
+ 
+  }

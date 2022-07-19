@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*,
+*:after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --color-Bright-orange: hsl(31, 77%, 52%);
+    --color-Dark-cyan: hsl(184, 100%, 22%);
+    --color-Very-dark-cyan: hsl(179, 100%, 13%);
+
+
+    --color-Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+    --font-400:'Lexend Deca', sans-serif;
+    --font-700:'Big Shoulders Display', cursive;
+}
+
+html{
+    font-size: 15px;
+    
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Very-light-gray);
+ 
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .article{
+    width: 300px;
+    min-height: 25vh;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1vh;
+    padding: 2.5vh;
+
+    align-items: flex-start;
+    background-color: red;
+}
+.main .article img{
+    width: 25%;
+}
+.main .article-1{
+    background-color: var(--color-Bright-orange);
+    border-top-left-radius:10px ;
+    border-top-right-radius: 10px;
+}
+.main .article-2{
+    background-color: var(--color-Dark-cyan);
+}
+.main .article-3{
+    background-color: var(--color-Very-dark-cyan);
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius: 10px;
+}
+.main .article-1 a{
+    color: var(--color-Bright-orange);
+}
+.main .article-2 a{
+    color: var(--color-Dark-cyan);
+
+}
+.main .article-3 a{
+    color: var(--color-Very-dark-cyan);
+    
+
+}
+
+
+
+.main .article a:hover{
+    background-color: inherit;
+    border: 2px solid white;
+    color: white;
+}
+.main .article-2 a{
+    color: var(--color-Dark-cyan);
+
+}
+.main .article-3 a{
+    color: var(--color-Very-dark-cyan);
+    
+
+}
+
+
+
+
+
+
+.main .article .car-img{
+    width: 100%;
+    
+}
+.main .article h2{
+    font-size: 2.2rem;
+    font-family: var(--font-700);
+
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+}
+.main .article p{
+    color:var(--color-Transparent-white);
+    font-family: var(--font-400);
+    padding: 1vh 0;
+}
+.main .article a{
+
+    padding: 0.8vh 2.2vh;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: var(--Very-light-gray);
+    font-family: var(--font-400);
+    border:2px solid transparent;
+    transition: background 200ms ease-in-out,
+    color 300ms ease-in-out;
+}
+
+@media screen and (min-width:1440px) {
+    .main{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .main .article{
+        width: 350px;
+        min-height: 30vh;
+    
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2vh;
+        padding: 5vh;
+        
+        align-items: flex-start;
+        background-color: red;
+    }
+    .main .article img{
+        width: 20%;
+    }
+    .main .article-1{
+        background-color: var(--color-Bright-orange);
+        border-top-left-radius:10px ;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius:10px;
+    }
+    .main .article-2{
+        background-color: var(--color-Dark-cyan);
+    }
+    .main .article-3{
+        background-color: var(--color-Very-dark-cyan);
+        border-bottom-left-radius:0px ;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius:10px;
+    }
+    .main .article-1 a{
+        color: var(--color-Bright-orange);
+    }
+    .main .article-2 a{
+        color: var(--color-Dark-cyan);
+    
+    }
+    .main .article-3 a{
+        color: var(--color-Very-dark-cyan);
+        
+    
+    }
+    
+    
+    
+    .main .article a:hover{
+        background-color: inherit;
+        border: 2px solid white;
+        color: white;
+    }
+    .main .article-2 a{
+        color: var(--color-Dark-cyan);
+    
+    }
+    .main .article-3 a{
+        color: var(--color-Very-dark-cyan);
+        
+    
+    }
+    
+    
+    
+    
+    
+    
+    .main .article .car-img{
+        width: 100%;
+        
+    }
+    .main .article h2{
+        font-size: 2.5rem;
+        font-family: var(--font-700);
+    
+        color: var(--Very-light-gray);
+        text-transform: uppercase;
+    }
+    .main .article p{
+        width: 70%;
+        color:var(--color-Transparent-white);
+        font-family: var(--font-400);
+        padding: 1vh 0 3vh 0;
+    }
+    .main .article a{
+    
+        padding: 0.8vh 2.2vh;
+        text-decoration: none;
+        border-radius: 50px;
+        background-color: var(--Very-light-gray);
+        font-family: var(--font-400);
+        border:2px solid transparent;
+        transition: background 200ms ease-in-out,
+        color 300ms ease-in-out;
+        justify-self: flex-end;
+        
+    }
+}

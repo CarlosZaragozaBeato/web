@@ -1,0 +1,49 @@
+
+header{
+    width: 100%;
+    min-height: 55vh;
+    background:url("../../images/bg-pattern.svg");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-position:top;
+    display:flex;
+    justify-content:center;
+}
+header .headerContainer {
+    width: 600px;
+    height:150px;
+    margin-top:15vh;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    gap:.5rem;
+    background:url("../../images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+  
+}
+header .headerContainer h1{
+    width: 100%;
+    font-size: 1.75rem;
+    color:var(--darkDesaturatedBlue-Text_CTA-Background);
+}
+header .headerContainer p{
+    width:90%;
+    text-align:center;
+    font-size: .9rem;
+    color:var(--grayishBlue-Text);
+}
+@media screen and (max-width:500px){
+    header .headerContainer h1{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    header .headerContainer p{
+        width:55%;
+        font-size: .9rem;
+        line-height: 1.5;
+    } 
+}

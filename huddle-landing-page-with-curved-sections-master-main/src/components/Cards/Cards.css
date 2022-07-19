@@ -1,0 +1,132 @@
+.cardMain{
+    width: 100%;
+   
+    position: relative;
+ 
+}
+.patternBgTop{
+    padding:11% 0 9% 0; 
+}
+.patternBgBottom{
+    padding:10% 0 9% 0; 
+}
+
+
+
+.cardMain .cardContent{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items:center;
+    gap:  7.5%;
+}
+.patternBgTop .cardContent{
+    background:var(--veryPaleBlue);
+    min-height:30rem;
+    flex-direction: row;
+}
+.patternBgBottom .cardContent{
+    background:var(--veryPaleBlue);
+    min-height:30rem;
+    flex-direction: row;
+}
+.cardMain .cardContent .cardInfo{
+    width: 30%;
+    max-width: 600px;
+    display:flex;
+    flex-direction: column;
+    gap:.5rem;
+    justify-content:center;
+    text-align: left;
+    color:var(--veryDarkCyan);
+   
+}
+.cardMain .cardContent .cardInfo h3{
+    font-size: 2.25rem;
+}
+.cardMain .cardContent .cardInfo p{
+    opacity: .8;
+    font-size: .9rem;
+}
+.patternBgTop:before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    width: 100%;height:100%;
+    background-image: url(../../images/bg-section-top-desktop-1.svg),url(../../images/bg-section-bottom-desktop-1.svg);
+    background-position:top,bottom;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.patternBgBottom:before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    width: 100%;height:100%;
+    background-image: url(../../images/bg-section-top-desktop-2.svg),url(../../images/bg-section-bottom-desktop-2.svg);
+    
+    background-position:top,bottom;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+.cardMain figure img{
+    width: 400px;
+    
+    height:auto;
+}
+@media screen and (max-width:800px){
+ 
+.patternBgTop{
+        padding:30% 0 14% 0; 
+    }
+.patternBgBottom{
+        padding:27% 0 27% 0; 
+}
+.patternBgTop .cardContent{
+
+    height: 70vh;
+}
+.patternBgBottom .cardContent{
+
+    height:70vh;
+}
+.cardMain .cardContent{
+    flex-direction: column-reverse;
+    gap: 5rem;
+    min-height: 30rem;
+}
+.cardMain .cardContent .cardInfo{
+    width: 100%;
+    text-align: center;
+}
+.patternBgBottom:before{
+    background-image: url(../../images/bg-section-top-mobile-2.svg),url(../../images/bg-section-bottom-mobile-2.svg);
+
+}
+
+.patternBgTop:before{
+    background-image: url(../../images/bg-section-top-mobile-1.svg),url(../../images/bg-section-bottom-mobile-1.svg);
+
+}
+.cardMain .cardContent {
+    gap: 2rem;
+}
+.cardMain .cardContent .cardInfo{
+    width: 90%;
+}
+.cardMain figure{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardMain figure img{
+    width: 300px;
+}
+}

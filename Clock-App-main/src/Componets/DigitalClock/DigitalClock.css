@@ -1,0 +1,48 @@
+.digitalClock{
+    width: 100%;
+    min-height: 90vh;
+    background:var(--darkGray);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.digitalClockContainer{
+    width: 80%;
+    height: 100%;
+    min-height: 30vh;
+    border-radius: 5px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background:var(--darkBlue);
+    box-shadow: var(--gray) 0px 10px 50px -15px;
+}
+.digitalClockContainer .childContainer{
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+    text-align: center;
+
+} 
+.digitalClockContainer .childContainer h3{
+    font-size: 3rem;
+    color:var(--white);
+}
+.digitalClockContainer .childContainer p{
+    color:var(--gray);
+    font-size: 1.5rem;
+}
+@media screen and (max-width:600px){
+    .digitalClockContainer{
+        width: 90%;
+        height: 100%;
+        min-height: 50vh;
+    }
+    .digitalClockContainer .childContainer h3{
+        font-size: 1.5rem;
+    }
+    .digitalClockContainer .childContainer p{
+        font-size: 1rem;
+    }
+}
+

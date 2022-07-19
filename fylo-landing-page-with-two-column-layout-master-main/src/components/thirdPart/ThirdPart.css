@@ -1,0 +1,77 @@
+
+
+.thirdPart {
+    width: 100%;
+    padding: 3rem 5%;
+    background:var(--desaturatedBlue);
+    display: flex;
+    justify-content:space-between;
+}
+
+.thirdPartTitle{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.thirdPartTitle h2{
+    font-family: var(--fontHeader);
+    color:var(--lightGrayishBlue);
+    font-size: 2rem;
+}
+.thirdPartTitle p{
+    width: 80%;
+    font-family: var(--fontBody);
+    color:var(--lightGray);
+    font-size: 1rem;
+    line-height:1.6;
+}
+
+.thirdPartForm{
+    width:50%;
+    min-width: auto;
+    max-width: 500px;
+    flex-direction: column;
+    gap: .5rem;
+    
+}
+
+.thirdPartForm label{
+    
+    width: 100%;
+    max-width:600px;
+    min-width: 100%;
+}
+.thirdPartForm .mail .inputMail{
+    border:0px solid white ;
+    background-color:white; 
+}
+.thirdPartForm button{
+    min-width: 200px;
+}
+.thirdPartForm .mail .errorBorder{
+    border:1px solid rgb(254, 104, 104);
+    color:rgb(254, 104, 104);
+}
+
+@media screen and (max-width:700px){
+    .thirdPart{
+        flex-direction: column;
+        align-items:center;
+     
+    }
+    .thirdPartTitle{
+        align-items:center;
+        text-align:center;
+        width: 100%;
+        
+    }
+    .thirdPartForm{
+        width: 80%;
+        margin-top: 2rem;
+       text-align:center;
+    }
+    .thirdPartForm button{
+        width: 100%;
+    }
+}

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+
+    /*Primary*/
+    --clr-Dark-cyan: hsl(185, 75%, 39%);
+    --clr-Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --clr-Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /*Neutral*/
+    --clr-Dark-gray: hsl(0, 0%, 59%);
+
+    /*font*/
+    --font:'Kumbh Sans', sans-serif;
+}
+*,
+*::after,
+*:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--clr-Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+    background-position:  bottom 40vh right 45vw,top 45vh left 40vw;
+    background-repeat: no-repeat;
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    min-width: 310px;
+    min-height: 27vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+   
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 20px;
+
+   
+ 
+}
+
+
+.card-body{
+    min-width: 100%;
+    min-height: 100%;
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2vh;
+    gap: 1vh;
+}
+.card-body .profile-img{
+    align-self: center; 
+
+
+
+  
+}
+.card-body .profile-img img{
+
+    width: 100px;
+    height: 90px;
+    border: 7px solid white;
+    border-radius: 100%;
+}
+.card-body .main-info{
+    text-align: center;
+    padding-bottom: 1vh;
+}
+.card-body .info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+
+
+  
+  
+}
+.card-body .info h1{
+    font-weight: 700;
+    color: var(--clr-Very-dark-desaturated-blue);
+}
+.card-body .info p{
+    font-size: 0.9rem;
+}
+.card-body p{
+    font-size: 0.8rem;
+    color: var(--clr-Dark-gray);
+    padding-top:.2vh;
+}
+
+.card-footer{
+
+   display: flex;
+   width: 100%;
+    min-height: 100%;
+    text-align: center;
+    padding: 2vh 0;
+    border-top: 1px solid #80808034 ;
+    justify-content: space-evenly;
+    justify-self: end;
+
+}
+.card-footer div h2{
+    color: var(--clr-Very-dark-desaturated-blue);
+    font-size: 0.9rem;
+}
+.card-footer div p{
+    font-size: .7rem;
+    color: var(--clr-Dark-gray);
+}
+
+@media screen and (min-width:1440px) {
+
+
+    body{
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: var(--clr-Dark-cyan);
+        background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+        background-position:  bottom 39vh right 50vw,top 55vh left 43vw;
+        background-repeat: no-repeat;
+        font-family: var(--font);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    
+    
+    .card-body{
+        min-width: 100%;
+        min-height: 100%;
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2vh;
+        gap: 1vh;
+    }
+    .card-body .profile-img{
+        align-self: center; 
+    
+    
+    
+      
+    }
+    .card-body .profile-img img{
+    
+        width: 100px;
+        height: 90px;
+        border: 7px solid white;
+        border-radius: 100%;
+    }
+    .card-body .main-info{
+        text-align: center;
+        padding-bottom: 1vh;
+    }
+    .card-body .info{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+    
+    
+      
+      
+    }
+    .card-body .info h1{
+        font-weight: 700;
+        color: var(--clr-Very-dark-desaturated-blue);
+    }
+    .card-body .info p{
+        font-size: 0.9rem;
+    }
+    .card-body p{
+        font-size: 0.8rem;
+        color: var(--clr-Dark-gray);
+        padding-top:.2vh;
+    }
+    
+    .card-footer{
+    
+       display: flex;
+       width: 100%;
+        min-height: 100%;
+        text-align: center;
+        padding: 2vh 0;
+        border-top: 1px solid #80808034 ;
+        justify-content: space-evenly;
+        justify-self: end;
+    
+    }
+    .card-footer div h2{
+        color: var(--clr-Very-dark-desaturated-blue);
+        font-size: 0.9rem;
+    }
+    .card-footer div p{
+        font-size: .7rem;
+        color: var(--clr-Dark-gray);
+    }
+}

@@ -1,0 +1,120 @@
+.Card{
+    width: 40%;
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 40vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: start;
+    background:var(--darkBlue);
+    border-radius: 25px;
+    padding: 2rem;
+}
+.figureImg{
+    width: 100%;
+    max-width: 40px;
+    max-height:40px;
+    min-height: 30px;
+    min-width: 30px;
+    background:hsl(213, 8%, 26%);
+    padding:.7rem;
+    border-radius: 100px;
+    margin-bottom:2.5rem;
+}
+.figureImg img{
+    width: 100%;
+}
+.info{
+    margin-bottom:1.5rem;
+}
+.info{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.info .title{
+    font-size:2rem;
+    color:var(--white);
+}
+.info .description{
+    color:var(--lightGrey);
+    line-height:1.5;
+}
+.form{
+    width: 100%;
+    min-height: 10vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap:1.5rem;
+}
+.ratings{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    gap: .5rem;
+}
+.choice{
+    width: 100%;
+    min-width:45px;
+    max-width:45px;
+    height:100%;
+    min-height:45px;
+    max-height:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:hsla(218, 7%, 31%, 0.75);
+    color:hsl(217, 19%, 67%);
+    position:relative;
+    border-radius:100px;
+}
+.choice:hover{
+    background-color:var(--orange);
+    color:var(--white);
+}
+.radio{
+    appearance:none;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    cursor: pointer;
+    border-radius:100px;
+}
+.ratings  .checked{
+    background-color:var(--lightGrey);
+    color:var(--white);
+}
+.btn{
+    width: 100%;
+    padding:.75rem 0;
+    color:var(--white);
+    background-color:var(--orange);
+    outline: none;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width:750px){
+    
+.Card{
+    width: 100%;
+    max-width: 90%;
+    min-width: auto;
+    padding: 1.5rem;
+}
+.ratings{
+    flex-wrap: wrap;
+}
+.choice{
+    min-width:40px;
+    max-width:40px;
+    min-height:40px;
+}
+}

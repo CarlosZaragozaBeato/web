@@ -1,0 +1,106 @@
+
+.formLogin{
+    position:fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; 
+    max-width: 700px;
+    height: 50%; 
+    background-color:var(--red);
+    z-index: 150;
+    display:flex;
+    flex-direction: column;
+
+}
+.formLogin .closeForm{
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--black);
+    padding:.5rem ;
+}
+.formLogin .closeForm svg{
+    font-size: 2rem;
+    color:var(--white);
+    opacity: .6;
+    cursor: pointer;
+}   
+.formLogin .closeForm svg:hover{
+    opacity: .8;
+}
+.formLogin form{
+    width: 100%;
+    height: 100%;
+}
+.formLogin form .formContainer{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1rem 2rem;
+}
+.formLogin form .formContainer h3{
+    width: 100%;
+    font-size: 1.5rem;
+    color:var(--black);
+}
+.formLogin form .formContainer label{
+    width: 100%;
+    max-width: 500px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 1rem;
+  
+    font-size: 1.1rem;
+    color:var(--black);
+}
+.formLogin form .formContainer label input{
+    width: 80%;
+    
+    color:var(--gray);
+    padding: .5rem .25rem;
+    font-size: 1.1rem;
+    border-top: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+}
+.formLogin form .formContainer button{
+    width: 80%;
+    color:var(--black);
+    background:var(--orange);
+    padding: .5rem .25rem;
+    font-size: 1.1rem;
+    border: 1px solid var(--black);
+    opacity: 0.5;
+    cursor: pointer;
+    font-weight: 800;
+}
+.formLogin form .formContainer button:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width:900px){
+    
+.formLogin{
+    width: 70%; 
+}
+
+}
+@media screen and (max-width:500px){
+    
+    .formLogin{
+        
+        width: 95%; 
+        height:70%;
+        
+    }
+    .formLogin .formContainer label{
+        flex-direction: column;
+        gap: .5rem;
+    } 
+    
+    }

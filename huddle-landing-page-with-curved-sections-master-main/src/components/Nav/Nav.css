@@ -1,0 +1,36 @@
+
+nav{
+    width: 90%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2.5% 0;
+}
+nav figure{
+    width:120px;
+    height:40px;
+    display: flex;align-items:center;
+}
+nav figure img{
+    width: 100%;
+}
+nav button{
+    border:2px solid var(--Pink);
+    padding: 1rem .5rem;
+    min-width: 150px;
+    outline:none;
+    border-radius: 50px;
+    opacity: .8;
+    color:var(--Pink);
+    font-weight: 800;
+ 
+}
+nav button:hover{
+    opacity: .5;
+}
+@media screen and (max-width:400px){
+    nav button{
+        min-width: 120px;
+        padding: .5rem 0rem;
+    }
+}

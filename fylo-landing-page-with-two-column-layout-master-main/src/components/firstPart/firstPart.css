@@ -1,0 +1,132 @@
+input,button{
+    background:none;
+    outline:none;
+    border:none;
+}
+.firstPart{
+    width: 90%;
+    display:flex;
+    justify-content:space-between;
+}
+.firstPartInfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: 1.5rem;
+
+}
+.firstPartInfo h1{
+    font-family: var(--fontHeader);
+    color:var(--veryDarkBlue);
+    font-weight: 800;
+}
+.firstPartInfo p{
+    font-family: var(--fontBody);
+    color:var(--desaturatedBlue);
+    font-size: .9rem;
+    letter-spacing:.015rem;
+    word-spacing: .2rem;
+}
+.figureBg{
+    width: 50%;
+    min-width: 350px;
+    max-width: 600px;
+    background:url("../../images/bg-curve-desktop.svg");
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+    
+}
+.figureBg img{
+    width: 100%;
+}
+.form{
+    width: 100%;
+    display:flex;
+    margin-top: 1rem;
+    gap: 1rem;
+
+}
+.form .mail{
+    width: 57%;
+}
+.form .mail .inputMail{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--veryDarkBlue);
+    border-radius:2.5px ;
+    height: 5vh;
+    padding:0 .5rem;
+}
+.form .mail .errorBorder{
+ border: 1px solid rgb(254, 104, 104);
+ color: rgb(254, 104, 104);
+}
+.form .mail p{
+    transition: all 300ms linear;
+}
+.form .mail .errorVisible{
+    opacity:1;
+    color: rgb(254, 104, 104);
+}
+.errorInvisible{
+     opacity:0;
+}
+.form button{
+    width: 30%;
+    height: 5vh;
+    padding: 0 .5rem;
+    background-color:var(--brightBlue);
+    color:var(--lightGrayishBlue);
+    border-radius:2.5px;
+    font-weight: 800;
+    font-size: .7rem;
+    cursor: pointer;
+}
+.form button:hover{
+    opacity: 0.9;
+}
+@media screen and (max-width: 768px) {
+    .firstPart{
+        flex-direction: column-reverse;
+        align-items:center;
+    }
+    .firstPartInfo{
+        width: 100%;
+        margin-right: 0;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+    }
+    .firstPartInfo h1{
+       word-spacing:.5rem;
+       font-size:1.5rem;
+    }
+    .firstPartInfo p{
+        font-size: .8rem;
+    }
+    .figureBg{
+        width: 100%;
+        background-image: url(../../images/bg-curve-mobile.svg);
+        min-width: auto;
+        max-width: auto;
+    }
+    .form{
+        flex-direction: column;
+        align-items:center;
+     
+    }
+    .form .mail{
+        width: 90%;
+
+    }
+    .form button{
+        width: 90%;
+    }
+  
+    .form .mail .errorInvisible{
+        font-size:0rem;opacity: 1;
+    }
+    
+}

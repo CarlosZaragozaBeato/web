@@ -1,0 +1,132 @@
+
+.Header{
+    width: 100%;
+    min-height: 20vh;
+    background:linear-gradient(90deg,rgba(0,0,0,.0) 0% , rgba(0,0,0,.4) 40%),url("../../images/background.webp");
+    
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column;
+    position:relative;
+
+}
+.Header:before{
+    content:"";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(255, 255, 255, 0.2);
+    z-index: -10;
+}
+.Header:after{
+    content:"";
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background:var(--black);
+    z-index: -10; 
+    opacity: 1;
+}
+.headerInfo{
+    width: 100%;
+    height: 100%;
+    align-self: end;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+.auth{
+    width: 50%;
+    max-width: 500px;
+
+
+
+}
+.auth .buttonGroup{
+    width: 100%;
+    display:flex;
+}
+.auth button{
+    width: 50%;
+    padding: .25rem 0;   
+    font-size: 1.1rem;
+    font-weight: 800;
+    opacity: .8;
+    cursor:pointer;
+}
+.auth .login{
+    background:var(--white);
+    color:var(--orange);
+}
+.auth .register{
+    color:var(--white);
+    background:var(--orange);
+}
+.headerInfo h1{
+    color:var(--red);
+    font-size: 3rem;
+    font-variant: small-caps;
+    font-weight:800;
+}
+.headerInfo .auth button:hover{
+    opacity: 1;
+}
+.userLogin{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.userLogin h2{
+    width: 70%;
+    padding: .5rem 1rem;
+    font-size:1rem;
+    text-align: center;
+    font-weight: 800;
+    color:var(--white);
+    background-color:var(--black);
+} 
+.userLogin button{
+    width: 30%;
+    color:var(--black);
+    background:var(--orange);
+    padding: .5rem .25rem;
+    font-size: 1.1rem;
+    border: 1px solid var(--black);
+    opacity: 0.5;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+@media screen and (max-width:800px){
+
+    .headerInfo{
+        flex-direction: column;
+        
+
+    }
+    .auth{
+        width: 100%;
+    }
+    .userLogin{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 2rem;
+    }   
+    .userLogin button{
+        width: 100%;
+    }
+    .userLogin h2{
+        width: 100%;
+    }
+
+}

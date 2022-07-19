@@ -1,0 +1,71 @@
+
+.HeaderInfo{
+    width: 80%;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    gap: 2rem;
+}
+.HeaderInfo .headerData{
+    width: 100%;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    gap:.25rem;
+}
+.HeaderInfo .headerData h1{
+        font-size: 2.5rem;
+        letter-spacing:0.1rem;
+        color:var(--veryDarkCyan);
+}
+.HeaderInfo .headerData p{
+    font-size: 1rem;
+    width: 50%;
+    color:var(--veryDarkCyan);
+    opacity: .8;
+}
+.HeaderInfo .headerData button{
+    color: white;
+    background:var(--Pink);
+    min-width: 200px;
+    padding:.75rem 0;
+    border-radius:50px ;
+    margin-top: 1rem;
+}
+.HeaderInfo figure{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.HeaderInfo figure img{
+    width: 600px;
+    height:auto;
+    
+}
+@media screen and (max-width:700px){
+    .HeaderInfo{
+        width: 90%;
+        margin-top:5rem;
+        
+    }
+    .HeaderInfo .headerData{
+        gap: 1rem;
+    }
+    .HeaderInfo .headerData h1{
+        font-size: 1.5rem;
+    }
+    .HeaderInfo .headerData p{
+        font-size: .9rem;
+        width: 95%;
+    }
+    .HeaderInfo figure{
+        margin-top:2.5rem;
+    }
+    .HeaderInfo figure img{
+        width: 300px;
+        height:auto;
+    }   
+}

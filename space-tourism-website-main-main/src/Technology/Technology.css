@@ -1,0 +1,225 @@
+.technologyContainer{
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.infoTechnology{
+    width: 60%;
+   
+}
+.technologyContent{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding-left:20% ;
+}
+.technologyContent .spaceSection{
+    font-size: 1.5rem;
+    font-family: var(--fontNavHeader);
+    font-weight: 300;
+    color:var(--White);
+    text-transform: uppercase;
+}
+.technologyContent .spaceSection span{
+    color:var(--lightGrayishBlue);
+    margin-right: 0.5rem;
+}
+.mainInfoTc{
+    width: 100%;
+    gap: 2rem;
+    display:flex;
+    margin-top: 10rem;
+}
+.formTec{
+    display:flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.formTec .radioContainerTec{
+    width: 60px;
+    height: 60px;
+    
+    border:1px solid var(--White);
+    border-radius: 100%;
+
+    color:var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    transition:all 150ms linear;
+    opacity: .7;
+    font-family: var(--fontInfo);
+    font-size: 2rem;
+    
+}
+.formTec .radioContainerTec:hover{
+    opacity: .9;
+}
+.formTec .radioContainerTecCheck{
+    border:1px solid transparent;
+    color:black;
+    background-color:var(--White);
+    opacity: 1;
+}
+.formTec .radioContainerTec .radioOptionsTec {
+    appearance:none;
+
+    border-radius: 100%;
+    width: 100%;
+   
+    position: absolute;
+    z-index: 100;
+
+    cursor: pointer;
+}
+
+.technologyData{
+    width: 100%;
+   
+}
+.technologyData .terminology{
+    color:var(--lightGrayishBlue);
+    font-family: var(--fontInfo);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.technologyData .nameTc{
+    color:var(--White);
+    font-family: var(--fontInfo);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.technologyData .descriptionTc{
+    color:var(--lightGray);
+    font-family: var(--fontTextBody);
+    font-size: 1.1rem;
+    text-align: left;
+    max-width: 450px;
+    margin-top: 2rem;
+    line-height: 1.5;
+    letter-spacing:.02rem;
+    min-height:auto;
+}
+.technologyImage{
+    width: 40%;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+}
+.technologyImage picture {
+    width: 80%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+   
+}
+.technologyImage picture img{
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+}
+@media screen and (max-width:900px){
+    .technologyContainer{
+        flex-direction: column-reverse;
+        position: relative;
+
+    }
+    .infoTechnology{
+        width: 100%;
+    }
+    .technologyContent{
+        margin:0;
+        padding: 0;
+        justify-content:center;
+        align-items:center;
+    }
+    .spaceSection{
+        position:absolute;
+        top: 0;
+    }
+
+   
+    .mainInfoTc{
+       margin: 0;
+       flex-direction: column;
+       align-items:center;
+       justify-content:center;
+   
+    }
+   
+    .technologyData{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        text-align:center
+    }
+    .technologyData .descriptionTc{
+        text-align:center;
+        max-width: 80%;
+    }
+    .formTec{
+        flex-direction: row;
+       
+    }
+  
+
+
+
+    .technologyImage{
+        min-width: 100%;
+        height: 100%;
+        margin-top: 5rem;
+    }
+    .technologyImage picture {
+        width: 100%;
+        height: 100%; 
+      
+    }
+    .technologyImage picture img{
+        min-width: 100%;
+        height: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+
+   .technologyContainer .technologyImage{
+        margin-top:2rem;
+    }
+    .technologyImage picture img{
+       
+        min-height: 200px;
+    }
+    .formTec .radioContainerTec{
+        width: 40px;
+        height: 40px;
+
+    }
+    
+    .technologyData .terminology{
+     
+        font-size: 1;
+      
+    }
+    .technologyData .nameTc{
+        
+        font-size: 2.5rem;
+ 
+    }
+    .technologyData .descriptionTc{
+        
+        font-size: .9rem;
+  
+    }
+}

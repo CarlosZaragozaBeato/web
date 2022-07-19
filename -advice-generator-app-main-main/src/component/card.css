@@ -1,0 +1,70 @@
+
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--darkBlue);
+}
+.card{
+    width: 90%;
+    max-width: 550px;
+    min-height: 30vh;
+    background:var(--darkGrayishBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 1rem;
+    align-items:center;
+    position: relative;
+    border-radius:10px;
+    padding: 2rem 1rem;
+    position: relative;
+}
+.adviceId{
+    width: 100%;
+    text-align: center;
+    letter-spacing:0.15rem;
+    font-size:0.5rem;
+    color:var(--neonGreen);
+    text-transform: uppercase;
+}
+.advice{
+    width: 100%;
+    text-align: center;
+    color:var(--lightCyan);
+  
+}
+.separator{
+    width: 100%;
+    display:grid;
+    place-content: center;
+}
+
+.separator img{
+    width: 100%;
+}
+.diceContainer{
+    position: absolute;
+    top: 92%;
+    left:50%;
+    transform:translateX(-50%);
+    background-color:var(--neonGreen);
+    padding:.25rem .5rem;
+    border-radius: 100px;
+    cursor:pointer;
+    transition:all 150ms linear;
+}
+.diceContainer:hover{
+    -webkit-box-shadow: 0px 0px 50px 1px var(--neonGreen); 
+    box-shadow: 0px 0px 50px 1px var(--neonGreen);
+    background-color:hsl(150, 100%, 76%);
+}
+@media screen and (max-width:400px){
+    .diceContainer{
+        top: 93.5%;
+    }
+}

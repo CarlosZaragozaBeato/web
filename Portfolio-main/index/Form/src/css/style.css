@@ -1,0 +1,278 @@
+
+
+/*Reset Form*/
+.formPart .infoForm input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.main {
+  width: 100%;
+  height: 100%; 
+
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer {
+  margin-top: 10vh;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.formStyles {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formPart {
+  width: 90%;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightGray);
+  border: 5px solid var(--titleGray);
+  border-radius: 20px;
+  color: var(--titleGray);
+  font-weight: 800;
+}
+.formPart .infoForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.formPart .infoForm label {
+  min-width: 200px;
+}
+
+.formPart .infoForm input {
+  width: 70%;
+  max-width: 600px;
+
+  border-bottom: 2px solid var(--titleGray);
+  color: var(--titleGray);
+  font-size: 1.2rem;
+}
+
+.formPart .infoForm span {
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.notificaciones .check input{
+
+   width: 30px; 
+}
+input[type="checkbox"] {
+
+
+  width: 1.5em;
+  height: 1.5em;
+  outline:none;
+  border: none;
+
+ 
+}
+
+.state {
+  width: 35px;
+  margin-top: 1rem;
+
+  display:none;
+
+}
+
+.formPart .infoForm .visible {
+ 
+  display:block;
+}
+
+.button {
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 90%;
+  min-width: 200px;
+
+  max-width: 400px;
+  padding: 0.5rem 0;
+  background-color: var(--titleGray);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--grey);
+  font-size: 1.25rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 0px 18px 9px rgba(0, 0, 0, 0.31);
+  box-shadow: 6px 0px 18px 9px rgba(0, 0, 0, 0.31);
+  transition: box-shadow 150ms ease-in-out, color 150ms ease-in-out,
+    background-color 150ms ease-in-out;
+}
+.btn:hover {
+  -webkit-box-shadow: 6px 0px 0px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 6px 0px 0px 0px rgba(0, 0, 0, 0.31);
+  color: var(--titleGray);
+  background-color: var(--grey);
+}
+
+.place{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+    margin-top:5rem;
+}
+.actualPlace{
+    width:90%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+
+}
+.place .actualPlace h3{
+    width:100%;
+    font-size:2rem;
+    color:var(--white);
+    text-align: left;
+    font-variant: small-caps;
+}
+.place .actualPlace .map{
+    width:90%;
+    height:100%;
+    min-width: 200px;
+    max-width: 600px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+   
+}
+
+
+.place .school{
+    width:100%;
+    min-width: 250px;
+    max-width: 1000px;
+    background-color:var(--grey);
+    font-size:1.25rem;
+    color:var(--titleGray);
+    padding:2rem;
+    margin-top:1rem;
+    text-align:center
+}
+.place .school a{
+    color:var(--teal);
+    font-size:1.25rem;
+    font-style: italic;
+    
+}
+.place .school a:hover{
+    color:var(--white);
+   
+}
+
+
+@media screen and (min-width: 900px) {
+  .formStyles {
+    width: 50%;
+    background: var(--titleGray);
+    padding: 1rem 0 0.25rem 0;
+
+    gap: 0rem;
+    border-radius: 20px;
+  }
+  .formStyles .formPart:nth-child(1) {
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+  }
+  .formStyles .formPart:last-child {
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+  }
+  .formPart {
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .formPart .infoForm {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    padding: 1.5rem 3rem;
+ 
+  }
+
+  .formPart .infoForm label {
+    font-size: 1.25rem;
+  }
+  .formPart:first-child {
+    padding-top: 2rem;
+  }
+
+  .notificaciones .infoForm input {
+    width: 50px;
+  }
+
+  .notificaciones .infoForm{
+    width: 80%;
+    
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+  }
+
+  .button {
+    padding: 2rem 0;
+
+    background-color: var(--lightGray);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .place{
+    width:75%;
+ 
+
+}
+.actualPlace{
+    width:100%;
+
+}
+}
