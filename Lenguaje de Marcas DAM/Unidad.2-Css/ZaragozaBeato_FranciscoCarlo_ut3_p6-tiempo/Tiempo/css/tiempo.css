@@ -1,0 +1,119 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+*,
+*::after,
+*::before{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+
+
+body{
+      width: 100%;
+      background-color: #B4D2F7;
+}
+#header{
+  width: 100%;
+  display: grid;
+  place-content: center;
+  margin-top: 5vh;
+  
+}
+#header .title{
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+}
+#header .title h1{
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+
+
+}
+#header .title i{
+  color: red;
+  padding: 1vh;
+  align-self: flex-end;
+  align-self: flex-start;
+  font-size: 30px;
+  transform: translateY(5px);
+  font-weight: 600;
+}
+#header .title .second{
+  transform: translateY(10px);
+}
+
+
+#section{
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+}
+#section .article{
+  width: 85px;
+  text-align: center;
+  margin: 2vh;
+  background: white;
+  border: 3px solid black ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
+#section .article h2{
+  width: 100%;
+  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(223, 222, 222);
+}
+#section .wednesday p{
+  background-color: #35B4EA;
+  padding: 5px 0;
+  color: white;
+}
+#section .article p:first-of-type{
+  background-color: red;
+  padding: 5px 0;
+  color: white;
+}
+#section .thursday p{
+  background-color: #0769BF;
+  padding: 5px 0;
+  color: white;
+}
+#section .friday p{
+  background-color: #0300C1;
+  padding: 5px 0;
+  color: white;
+}
+#section .saturday p{
+  background-color: #0300C1;
+  padding: 5px 0;
+  color: white;
+}
+#section .sunday p{
+  background-color: #0300C1;
+  padding: 5px 0;
+  color: white;
+}
+
+@media(max-width:1000px){
+:root{
+  font-size: 30px;
+}
+  #section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+  }
+  #section .article{
+    width: 90%;
+   
+  }
+}

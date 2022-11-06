@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url("/fonts/Dosis-Regular.ttf");
+}
+
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    color: #424242;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Dosis';
+}
+#header{
+    width: 100%;
+   
+}
+#header #top-header{
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#header #top-header h1{
+    flex-basis: auto;
+    margin-left: 5vw;
+
+    font-weight: 500;
+    
+
+}
+
+#header #top-header p{
+
+    text-align: center;
+
+}
+#header #top-header p:hover{
+    border-bottom:1px solid #1c1c1c ;
+    cursor: pointer;
+}
+#header #top-header .imgs{
+    flex-basis: auto;
+    margin-right: 5vw;
+    
+ 
+}
+#header #top-header .imgs img{
+    flex-basis: auto;
+    padding: 2vh;
+    margin: 0 2px;
+    border: 1px solid black;
+    transition: box-shadow 300ms ease-in-out,
+                transform 100ms linear;
+}
+#header #top-header .imgs img:hover{
+
+    -webkit-box-shadow: inset -2px 5px 28px -18px rgba(115,113,115,0.36);
+    -moz-box-shadow: inset -2px 5px 28px -18px rgba(115,113,115,0.36);
+    box-shadow: inset -2px 5px 28px -18px rgba(115,113,115,0.36);
+    cursor: pointer;
+    transform: scale(1.01);
+   
+}
+#header .sub-header{
+    width: 100%;
+    background-color: #D8D8D8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+#header .sub-header .west-img{
+
+    margin-left: 5vw;
+    
+}
+#header .sub-header .exposiciónTemporal{
+    width: 60%;
+    justify-self: flex-start;
+    align-self: start;
+    border-top: 5px solid #585858;
+  
+}
+#header .sub-header .tickets{
+    width: 5%;
+    min-width: 50px;
+    height: 10%;
+    min-height: 50px;
+    margin-right: 5vw;
+}
+
+#section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
+#section #nav{
+    width: 20%;
+ 
+    margin-left: 5vw;
+    
+}
+#section #nav ul{
+
+    list-style: none;
+  
+}
+
+
+#section #nav {
+color:rgb(136, 136, 136) ;
+}
+#section #nav ul li{
+    width: 74%;
+}
+#section #nav ul li:hover{
+    background-color: #d8d8d8;
+    cursor: pointer;
+}
+
+#section #nav .sub-nav{
+    width: 80%;
+    text-align: justify  ;
+    font-size: 0.8rem;
+    margin-left: 2.5vh;
+    
+
+}
+#section #nav .first-nav{
+    border-bottom:2px solid #848484 ;
+    padding: 1vh 0;
+}
+#section #nav .first-nav:first-child{
+    margin-top: 5px;
+}
+
+#section #aside{
+    width: 20%;
+   
+}
+#section #aside h3{
+    width: 80%;
+    background-color: #2e2e2e;
+    padding: 2.5vh 0;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+
+}
+#section #aside ul{
+
+    width: 80%;
+    margin-top: 0.1vh;
+    list-style: none;
+}
+#section #aside ul li:hover{
+    cursor: pointer;
+}
+#section #aside ul li{
+    padding: 0.7vh 0;
+}
+#section #aside ul li span{
+    
+    border-bottom: 1px solid #1c1c1c;
+}
+
+
+@media screen and (min-width:691px) and (max-width:997px){
+    #header .sub-header .tickets{
+        width: 50px;
+   
+        height: 50px;
+    
+        margin-right: 0;
+        position: absolute;
+        top: 0;
+        left: 40%;
+    }
+    #header .sub-header .exposiciónTemporal{
+        width: 50%;
+        justify-self: flex-end;
+        align-self: start;
+        border-top: 5px solid #585858;
+      
+    }
+    #section #nav{
+        width: 30%;
+        padding-bottom: 5vh ;
+     
+        margin-left: 5vw;
+        
+    }
+    #section #nav ul{
+    
+        list-style: none;
+      
+    }
+    
+    
+    #section #nav {
+    color:rgb(136, 136, 136) ;
+    }
+    #section #nav ul li{
+        width: 74%;
+    }
+    #section #nav ul li:hover{
+        background-color: #d8d8d8;
+    }
+    
+    #section #nav .sub-nav{
+        width: 80%;
+        text-align: justify  ;
+        font-size: 0.8rem;
+        margin-left: 2.5vh;
+        
+    
+    }
+    #section #nav .first-nav{
+        border-bottom:2px solid #848484 ;
+        padding: 1vh 0;
+    }
+    #section #nav .first-nav:first-child{
+        margin-top: 5px;
+    }
+    #section #article{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2vh;
+}
+#section #article img{
+    width: 100%;
+    height: 70%;
+}
+#section #aside{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    padding-bottom: 5vh;
+   
+}
+#section #aside h3{
+    width: 100%;
+    background-color: #2e2e2e;
+    padding: 2.5vh 0;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+
+}#section #aside p{
+    text-align: start;
+  
+    width: 80%;
+
+    margin: 2vh 0 1vh 0;
+}
+#section #aside ul{
+
+    width: 80%;
+    margin-top: 0.1vh;
+    list-style: none;
+}
+#section #aside ul li:hover{
+    cursor: pointer;
+}
+#section #aside ul li{
+    padding: 0.7vh 0;
+}
+#section #aside ul li span{
+    
+    border-bottom: 1px solid #1c1c1c;
+}
+}
+
+@media (min-width:250px) and (max-width:691px){
+    
+   
+    #header #top-header h1{
+       text-align: center;
+     width: 100%;
+        font-weight: 500;
+        margin: 0;
+    
+    }
+    
+    #header #top-header p{
+    width: 100%;
+    text-align: center;
+    margin: 2vh 0;
+      
+    }
+  
+    #header #top-header .imgs{
+       
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        
+     
+    }
+    #header #top-header .imgs img{
+   
+        justify-content: center;
+        align-items: center;
+     
+        border: 1px solid black;
+        transition: box-shadow 300ms ease-in-out,
+                    transform 100ms linear;
+    }
+
+    #header .sub-header{
+        width: 100%;
+        background-color: #D8D8D8;
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+        margin-top: 5vh;
+    }
+    #header .sub-header .west-img{
+        width: 100%;
+        margin: 0;
+        
+    }
+    #header .sub-header .exposiciónTemporal{
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+        border-top: 5px solid #585858;
+        padding: 5vh 0;
+        
+    }
+    #header .sub-header .exposiciónTemporal p,h2,h3{
+
+        padding: 0.2vh 0;
+        margin-left: 1vh;
+    }
+    #header .sub-header .tickets{
+        width: 5%;
+        min-width: 50px;
+        height: 10%;
+        min-height: 50px;
+        margin: 0;
+        padding: 1vh 0;
+    }
+    #section #nav{
+        width: 100%;
+      
+        display: flex;
+        margin: 0;
+         
+        
+    }
+    #section #nav ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        list-style: none;
+      
+    }
+    
+    
+    #section #nav {
+    color:rgb(136, 136, 136) ;
+    }
+    #section #nav ul li{
+        
+        text-align: center;
+        padding: 0.5vh 0;
+
+    
+
+    }
+    #section #nav ul li:hover{
+        background-color: #d8d8d8;
+    }
+    
+    #section #nav .sub-nav{
+        width: 100%;
+        display: none   ;
+        text-align: center  ;
+        font-size: 0.8rem;
+        margin-left: 0;
+        
+    
+    }
+    #section #nav .first-nav{
+        border-bottom:0px solid #848484 ;
+  
+        margin: 1vh 0;
+    }
+    #section #nav .first-nav:first-child{
+        margin-top: 5px;
+    }
+
+    #section #article{
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 3vh 0;
+    }
+    #section #article .img-article{
+     
+       width: 90%;
+       height: 100%;
+    }
+    #section #aside{
+        width: 90%;
+
+       
+    }
+    #section #aside h3{
+        width: 100%;
+        background-color: #2e2e2e;
+        padding: 2.5vh 0;
+        text-align: center;
+        font-weight: 500;
+        color: white;
+    
+    }
+    #section #aside p{
+        margin: 2vh 0;
+        margin-left: 2.5vw  ;
+    }
+    #section #aside ul{
+    
+        width: 100%;
+        margin-top: 0.1vh;
+        list-style: none;
+        margin-left: 2.5vw  ;
+        padding-bottom: 5vh;
+    }
+    #section #aside ul li:hover{
+        cursor: pointer;
+    }
+    #section #aside ul li{
+        padding: 0.7vh 0;
+    }
+    #section #aside ul li span{
+        
+        border-bottom: 1px solid #1c1c1c;
+    }
+
+
+}
+

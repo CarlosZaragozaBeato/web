@@ -1,0 +1,198 @@
+
+.modal{
+    width:100%;
+    min-height: 80vh;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    background-color: var(--darkPrimary);
+    padding: 2rem 0;
+    z-index: 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.modal .modal_item {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-direction: column;
+}
+.modal .header_item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem  ;
+    background-color: rgba(255, 255, 255, 1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal .header_item h3{
+    font-size: 1.75rem;
+    color:var(--darkPrimary);
+}
+.modal .header_item .close_icon{
+    font-size: 3rem;
+    cursor: pointer;
+    color:var(--secondaryColor);
+    opacity: 0.75;
+}
+.modal .header_item .close_icon:hover{
+    opacity: 1;
+}
+.modal .modal_item .body_item{
+    width: 100%;
+    display: flex; 
+    flex-direction: row-reverse;
+}
+.modal .modal_item .body_item .body_images{
+    width: 30%;
+    background-color: rgb(133, 133, 133);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom-right-radius:10px;
+}
+.modal .body_item .body_images .currentImage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.modal .body_item .body_images .currentImage img{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    
+}
+.modal .body_item .body_images .list_images #selectedImage{
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+.modal .body_item .body_images .list_images {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /*background-color: rgba(255, 255, 255, 0.05);**/
+    background-color: #424242;
+    padding:1rem ;
+}
+.modal .body_item .body_images .list_images img{
+    width: 15%;
+    background-color: var(--darkPrimaryVariant );
+    border-radius: 5px;
+    cursor: pointer;
+}
+.subtitle{
+    color:var(--secondaryColor);
+    font-weight: bold;
+}
+
+.body_info{
+    width: 70%;
+    min-height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    text-align: center;
+    background-color: var(--darkPrimaryVariant);
+}
+
+.body_info_body{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+}
+.body_info p{
+    line-height: 2rem;
+    letter-spacing: .03rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+}
+.body_info_footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    /*background-color: #848484;*/
+    background-color: #424242;
+
+}
+
+.body_info_footer p {
+    color: var(--primaryColor);
+    font-size: 1rem;
+}
+
+.link{
+    font-size: 1.45rem;
+    color:var(--primaryColor);
+    text-decoration: none;
+}
+@media (max-width: 1000px) {
+    .modal .modal_item {
+        width: 100%;
+        padding: 1rem;
+    }
+    .body_info p{
+        font-size: 1rem;
+    }
+    .body_info h3{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .modal .header_item h3{
+        font-size:2rem;
+        width: 90%;
+        word-wrap: break-word;
+    }
+    .modal .modal_item  .body_item{
+        flex-direction: column;
+        
+    }
+    .modal .modal_item .body_item .body_images{
+        width: 100%;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0;
+    }
+    .modal .modal_item .body_item .body_images .currentImage{
+        width: 270px;
+    }
+    .modal .body_item .body_images .list_images {
+        width: 100%;
+        justify-content: center;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .modal .body_item .body_images .list_images img{
+        width: 60px;
+        border-radius:10px ;    
+    }
+  
+    .modal .modal_item .body_item .body_info{
+        width: 100%;
+    }
+}

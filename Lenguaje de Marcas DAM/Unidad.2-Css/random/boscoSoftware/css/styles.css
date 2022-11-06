@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+
+    --bg-Principal: #184e77;
+    --bg-Secondary: #090a1b;
+    --color_aside:#5f8c9b;
+    --DKcolor-Font: #161a1d;
+    --LH-color-Font: #d3d3d3;
+    --divider-color-1: #94d4e9;
+    --divider-color-2: #5aa9ce;
+    --bg-section:#abc4ffb0;
+    --border-cards-color:#0d1321;
+    --bgfooter:#618081;
+    --bg-aside:#000511;
+    --font: 'Poppins', sans-serif;
+
+}
+
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--bg-Principal), var(--bg-Secondary));
+    font-family: var(--font);
+    padding-bottom: 3vh;
+}
+
+
+#header {
+    width: 100%;
+    min-height: 30vh;
+    background: url("../img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--divider-color-1), var(--divider-color-2));
+}
+
+#header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--LH-color-Font);
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.800);
+
+}
+
+#nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.287);
+
+}
+
+#nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+#nav ul li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: background 200ms linear;
+}
+
+#nav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.507);
+    cursor: pointer;
+}
+
+#nav ul li a {
+    width: 100%;
+
+    color: var(--LH-color-Font);
+
+    font-size: 1.2rem;
+    text-decoration: none;
+
+
+}
+
+
+.main{
+    width: 100%;
+    height: auto;
+
+
+    text-align: center;
+
+}
+.main h2{
+    margin: 5vh 0;
+    font-size: 2.5rem;
+    font-variant: small-caps;
+    color: var(--DKcolor-Font);
+}
+
+
+#section{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(-180deg, rgba(0,0,0,0.7),rgba(0,0,0,0.0) );
+ 
+    
+   
+
+    
+}
+#section h2{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.800);
+    padding: 10vh;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--LH-color-Font);
+ 
+    font-variant: small-caps;
+}
+
+#section .articles{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    justify-content: space-around;
+    gap: 0vh;
+
+}
+#section .articles .article{
+
+  
+   
+    width: 100%;
+   
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--LH-color-Font);
+   
+    padding: 1vh ;
+
+}
+
+#section .articles .text{
+
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 50%;
+    justify-content: space-around;
+    height: 100%;
+    margin: 0 1%;
+}
+#section .articles .text a{
+    
+    
+    width: 20%;
+    min-width: 150px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--divider-color-1);
+    background: var(--border-cards-color);
+    padding: 0.4vh 0;
+    
+}
+#section .articles .article h3{
+    text-align: start;
+    font-size: 2rem;
+    font-variant: small-caps;
+
+}
+
+
+#section .articles .first-article{
+
+        background: linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),url("../img/dillon-wanner-vT3GTpotlwE-unsplash.jpg") ;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        align-self: flex-start;
+}
+
+
+#section .articles .second-article{
+    background: linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/austin-schmid-Lg7VCKyai2c-unsplash.jpg") ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    border-top: 30px solid rgba(0, 0, 0, 0.800) ;
+    align-self: flex-end;
+
+
+}
+#section  .second-article .text{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    width: 40%;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-self: flex-end;
+    height: 100%;
+
+}
+#section  .second-article .text h3{
+    text-align: end;
+}
+#section .second-article .text a{
+
+  align-self: flex-end;
+}
+
+#about-me{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+#about-me .card-about-me{
+
+    width: 100%;
+    padding:5vh;
+    height: 100%;
+    display: flex;
+    text-align: start;
+    background-color: var(--bg-aside);
+   color: var(--LH-color-Font);
+   box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgb(0, 0, 0) -3px -3px 6px 1px inset;
+}
+#about-me .card-about-me .info-about-me .title{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-top: 5vh
+
+  
+
+}
+#about-me .card-about-me .info-about-me .title h2{
+
+    font-weight: 300;
+  
+    width: 50%;
+
+
+
+}
+#about-me .card-about-me .info-about-me .title span{
+   
+    font-weight: 800;
+    color:var(--bg-section);
+}
+#about-me .card-about-me .info-about-me .title p{
+color: var(--divider-color-1);
+font-size: 0.7rem;
+font-style: italic;
+
+}
+#about-me .card-about-me .info-about-me .title a{
+    
+    background-color: var(--LH-color-Font);
+    text-decoration: none;
+    color: var(--border-cards-color);
+    font-variant: small-caps;
+    padding: 1vh 2vh;
+   width: 200px;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 600;
+   
+}
+#about-me .card-about-me .info-about-me{
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
+}
+
+#about-me .card-about-me .info-about-me .cards-info{
+    display: flex;
+
+    gap: 10vh;
+    width: 100%;
+    
+}
+#about-me .card-about-me .info-about-me .cards-info .card-info{
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-top: 5vh;
+    
+}
+#about-me .card-about-me .info-about-me .cards-info .card-info .happyClients h2{
+
+
+    font-size: 3rem;
+    color: var(--divider-color-2);
+
+
+
+}
+#about-me .card-about-me .info-about-me .cards-info .card-info .happyClients h3{
+
+    font-size: 1.5rem;
+    color: var(--divider-color-1);
+    text-transform: uppercase;
+}
+
+#about-me .card-about-me img{
+ 
+    min-width: 150px;
+    min-height:150px;
+    align-self: flex-start;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    border-radius: 10px;
+}
+
+#about-me .card-about-me .info-about-me .cards-info .card-info  p{
+
+
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--color_aside);
+
+}
+#about-me .card-about-me .info-about-me .cards-info .card-info .awards h2{
+
+
+    font-size: 3rem;
+    color: var(--divider-color-2    );
+
+
+
+}
+#about-me .card-about-me .info-about-me .cards-info .card-info .awards h3{
+
+    font-size: 1.5rem;
+    color: var(--divider-color-1);
+    text-transform: uppercase;
+
+}
+
+    
+
+#footer{
+    width: 100%;
+    background: var(--bgfooter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
+    flex-wrap: wrap;
+    gap: 2vh;
+    border-top: 15px solid rgba(0, 0, 0, 1);
+}
+#footer .reviews{
+ 
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-items: center;
+    background-color: rgba(0, 0, 0, 0.561);
+    flex-wrap: wrap;
+    padding: 1vh;
+    border: 1px solid black;
+    color: var(--LH-color-Font);
+    font-variant: small-caps;
+
+}
+
+#footer .reviews figure img{
+    mix-blend-mode: soft-light;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+
+    #section .articles .second-article{
+        background: linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6), url("../img/austin-schmid50.jpg")) ;
+        background-size: cover;
+        background-position: top;
+        background-attachment: none;
+
+    }
+    #section .articles .first-article{
+        background: linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),url("../img/dillon-wanner-50.jpg") ;
+       background-attachment: none;
+        background-size: cover;
+        background-position: top;
+
+
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:700px){
+
+
+    #nav {
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.287);
+        padding: 2vh 0;
+    }
+    
+    #nav ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 2vh;
+        justify-content: space-between;
+    
+    }
+    
+    #nav ul li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        transition: background 200ms linear;
+    }
+    
+    #nav ul li:hover {
+        background-color: rgba(0, 0, 0, 0.507);
+        cursor: pointer;
+    }
+    
+    #nav ul li a {
+        width: 100%;
+    
+        color: var(--LH-color-Font);
+    
+        font-size: 1.2rem;
+        text-decoration: none;
+    
+    
+    }
+    #section .articles{
+        gap: 0vh;
+    }
+    #section .articles .second-article{
+   
+       background-image:  linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/austin-schmid-75unsplash.jpg");
+       background-attachment: scroll;
+   
+        
+
+    }
+    
+
+    #section .articles .article .text{
+        width: 90%;
+            text-align: center;
+            justify-self: center;
+            align-self: center;
+        overflow: hidden;
+            margin: 0;
+            
+    }
+    #section .articles .article .text h3 {
+
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        font-size: 3rem;
+      
+    }
+    #section .articles .article .text a {
+        width: 90%;
+        font-size: 1.5rem;        
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        padding: 0.5vh 1vh;
+        margin-top: 10vh;
+      
+    }
+    #section .articles .article .text p{
+        font-size: 1.1rem;
+    }
+    #section .articles .article{  
+      
+        width: 100%;
+        
+    }
+
+
+    #about-me .card-about-me img{
+ 
+        display: none;
+     }
+     #footer {
+        
+         flex-direction: column;
+     
+     }
+     #footer .reviews{
+ 
+         width: 90%;
+ 
+ 
+     }
+       }
+  
+    
+    
+
+
+
+
+@media screen and (max-width:600px){
+    #about-me .card-about-me .info-about-me .cards-info{
+  
+    flex-direction: column;
+     
+        
+    }
+    #about-me .card-about-me .info-about-me .cards-info .card-info{
+
+        width: 100%;
+    
+        
+    }
+}

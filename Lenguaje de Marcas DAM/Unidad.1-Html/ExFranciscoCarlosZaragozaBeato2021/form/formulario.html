@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../exLMSG1EV.css">
+</head>
+
+<body>
+
+<!--Header-->
+    <header>
+        <h1>Examen de LMSG 1EV. 15 noviembre'21</h1>
+<!--Nav-->
+<nav>
+
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../form/formulario.html">Formulario</a></li>
+        <li><a href="../table/Tabla.html">Tabla</a></li>
+    </ul>
+</nav>
+    </header>
+<!--Form-->
+    <form action="mailto:carloszaragozabeato15@gmail.com" method="POST">
+
+
+        <fieldset>
+            <legend> Datos personales</legend>
+
+
+            <label for="name">
+                Nombre * <input type="text" name="name" id="name" maxlength="25">
+            </label>
+            <br>
+            <br>
+            <label for="password">
+                Contraseña
+                <input type="password" name="password" id="password" maxlength="8">
+            </label>
+            <br>
+            <br>
+            <label for="num">
+                Núm socio <input type="number" name="num" id="num" value="12345" min="0" max="20000" readonly>
+            </label>
+            <br>
+            <br>
+            <label for="photo">
+                Foto <input type="file" name="photo" id="photo">
+            </label>
+            <br>
+            <br>
+            <label for="date">
+                Fecha <input type="date" name="date" id="date" required>
+            </label>
+
+            <br>
+            <br>
+
+<!-- 
+    Esto esta hecho con un select, porque no sabía como hacelo con datalist.
+    
+    <datalist >
+
+        --No sabía como poner las opciones a parte dentro de la datalist
+
+    </datalist>
+
+    <input type="text" list="nombre que le corresponde a la lista">
+-->
+
+            <label for="ciudad">Ciudad </label>
+            <select name="ciudad">
+                <option value="choose" disabled selected>Escoje tu ciudad de origen </option>
+                <option value="Albacete">Albacete</option>
+                <option value="AlcazarDeSanJuanjuan">Alcázar de San Juan</option>
+                <option value="Alicante">Alicante</option>
+                <option value="Aranjuez">Aranjuez</option>
+            </select>
+            </label>
+            <br>
+            <br>
+
+            <label for="mail">
+                E-mail
+                <input type="email" name="mail" id="mail">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Edad</legend>
+
+            <label for="radio">
+                <input type="radio" name="radio" id="20-39">
+                20-39
+            </label>
+            <label for="radio">
+                <input type="radio" name="radio" id="   40-59   ">
+                40-59
+            </label>
+            <label for="radio">
+                <input type="radio" name="radio" id="60-79">
+                60-79
+            </label>
+        </fieldset>
+
+
+        <label for="check">
+
+            <input type="checkbox" name="check" id="check">
+            Acepto recibir comunicaciones de promociones de <a href="https://www.iesjuanbosco.es">estos sectores.</a>
+
+        </label>
+        <input type="submit" value="Continuar">
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>

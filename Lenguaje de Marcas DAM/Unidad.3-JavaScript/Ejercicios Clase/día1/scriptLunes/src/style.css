@@ -1,0 +1,49 @@
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+.output{
+    width:100%;
+    background-color:teal;
+    text-align: center;
+    font-size:3rem;
+    color:rgb(255, 255, 255);
+    margin-top:2rem;
+}
+
+.container{
+    width:200px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+.buttonGr{
+    display:flex;
+    margin-top:2rem;
+    gap: 1rem;
+}
+button{
+    width: 100px;
+    padding:1rem;
+    border: none;
+    outline: none;
+  
+    border-radius: 10px;
+}
+button:first-child{
+    background-color: rgb(115, 219, 115);
+    border: 1px solid teal;
+}
+button:last-child{
+    background-color: rgb(255, 96, 96);
+    border: 1px solid rgb(246, 0, 0);
+}

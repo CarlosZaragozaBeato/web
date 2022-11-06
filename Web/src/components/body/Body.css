@@ -1,0 +1,119 @@
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+
+.main .project_item{
+    width:50%;
+    max-width: 900px;
+    min-width: 800px;
+    min-height: 10vh;
+    max-height: 350px;
+    display:flex;
+    background-color: var(--darkPrimaryVariant);
+    border-radius: 5px;
+    margin: 3rem 0;
+  
+}
+
+.main .project_item .img_container{
+    width: 30%;
+    min-height: 100%;
+    background-color: var(--darkPrimary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .project_item .img_container img{
+    width: 100%;
+}
+.main .project_item .card_body{
+    width: 70%;
+    padding:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main .project_item .card_body .card_title{
+    width: 100%;
+    height: 20%;
+    text-overflow: ellipsis;
+}
+.main .project_item .card_body .card_title h2{
+    font-size: 2rem;
+    color:var(--darkPrimary);
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .project_item .card_body .card_content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.main .project_item .card_body .card_content .footer_section {
+    display: flex;
+    justify-content: space-between;
+    margin-top:2rem;
+}
+.main .project_item .card_body .card_content .footer_section button{
+    background-color: var(--primaryColor);
+    outline: none;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 5px ;
+    cursor: pointer;
+    color:var(--darkPrimaryVariant);
+    font-weight: bold;
+}
+.main .project_item .img_container img{
+    width: 100%;
+    height: 100%;
+    filter: blur(.25rem);
+    transition: all 200ms linear;
+    opacity: .55; 
+}
+@media (max-width: 800px) {
+    .main{
+        gap: 1rem;
+    }
+    .main .project_item{
+
+        width:80%;
+        max-width: 320px;
+        min-width: auto;
+        min-height: 70vh;
+        flex-direction: column;
+        border-radius:0 ;
+        gap: 0;
+    }
+    .main .project_item .img_container{
+        width: 100%;       
+  
+        background-color: rgb(82, 82, 82,.9);
+    
+ 
+    }
+    .main .project_item .img_container img{
+       
+        width: 100%;
+        height: 45vh;
+    }
+    .main .project_item .card_body{
+        background-color: var(--darkPrimaryVariant);
+        width: 100%;
+        min-height: 20vh;
+        gap: 0;
+        padding:1rem;
+    }
+}

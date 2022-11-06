@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="stylesheet" href="src/css/style.css">
+  
+
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="title">Simple, traffic-based pricing</h1>
+    <p class="subtitle"> Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+
+
+
+  <main class="card">
+    <div class="cardFirstSection">
+
+    <div class="firstSection">
+    <p class="views">-- PageViews</p>
+    <label for="range"  class="label">
+      <input
+        type="range"
+        name="range"
+        id="range"
+        class="slider"
+        min="0"
+        max="4"
+        step="1"
+        value="2"
+      />
+      </label>
+
+    <h2 class="priceSlider"><span class="price">$16</span><span class="month">/month</span></h2>
+  </div>
+    <div class="section">
+      <div class="month">
+          <label for="check">Monthly Billing</label>
+          <input type="checkbox" id="check" name="check">
+      </div>
+    
+      <div class="year">
+        <p>Yearly Billing<span class="percentage">-25% <span class="discount">discount</span></span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="secondSection">
+    
+    <div class="prosSection">
+    <div class="pros">
+      <figure>
+        <img src="src/images/icon-check.svg" alt="check icon"></figure>
+      </figure>
+      <p>
+        Unlimited websites
+      </p>
+    </div>
+
+    <div class="pros">
+      <figure>
+        <img src="src/images/icon-check.svg" alt="check icon"></figure>
+      </figure>
+      <p>
+        100% data ownership
+      </p>
+    </div>
+
+    <div class="pros">
+      <figure>
+        <img src="src/images/icon-check.svg" alt="check icon"></figure>
+      </figure>
+      <p>
+        Email reports
+      </p>
+    </div>
+  </div>
+   
+  <a href="index.html" class="start">Start my trial</a>
+   
+  </div>
+</main>
+
+<script src="src/script/app.js"></script>
+ 
+</body>
+</html>

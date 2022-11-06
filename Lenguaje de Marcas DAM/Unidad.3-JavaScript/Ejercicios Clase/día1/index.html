@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        /*     let resultado = prompt("introduce un número:");
+        let resultadoEval = eval(resultado);
+        document.write(resultado)
+        document.write("<br>")
+        document.write(resultadoEval)
+        console.log(isNaN(resultado))
+
+        let cadena = prompt("Introduce la edad",15);
+        document.write(String(cadena))
+        document.write("<br>")
+        document.write(isNaN(cadena))
+
+        let resultado=0;
+
+        resultado=5+5;
+
+        console.log(`La suma del resultado es ${resultado}`);
+
+
+        let num1 = prompt("Introduce el valor del primer número");
+        let num2 = prompt("Introduce el valor del segundo número");
+
+        let resultado=parseInt(num1)+parseInt(num2);
+
+        alert(`El valor del primer numero es ${num1}, el valor del segundo número es ${num2}, y su suma es ${resultado}`)
+
+        const precioConIva = ()=>{        
+            let precio = prompt("Introduzca el precio de su producto");
+
+            let precioIva = parseInt(precio)*1.21;
+            return precioIva;       
+        }
+        precioConIva();
+        
+        const precioConIva = ()=>{
+
+            let precioSinIva=0;
+            let precioIva =0;
+            let continuar ="si";
+            while(continuar.toLowerCase()==="si"){
+              
+                precioSinIva = prompt("Introduzca el precio de su producto");
+                
+                precioIva = parseFloat(precioSinIva)*1.21;
+                alert(precioIva);
+                continuar = prompt("¿Quieres continuar con la operación?");
+                
+
+            } 
+        }
+        precioConIva();*/
+
+      
+        function primo(valor){
+           let contador=0;
+          let primo;
+
+         
+            for(let i=valor; i>1;i--){
+                if(valor%i!=0 || valor==2){
+                    primo ="primo"
+                }
+               
+                else if(valor%i==0){
+                    primo="No es Primo";
+                }
+            }
+            return primo;
+        } 
+         
+        
+    
+        console.log(primo(4))
+
+    </script>
+</body>
+</html>

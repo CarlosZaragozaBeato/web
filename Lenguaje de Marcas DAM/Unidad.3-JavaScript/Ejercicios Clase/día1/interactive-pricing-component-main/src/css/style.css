@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+:root {
+  /*Primary Colors*/
+  --softCyan: #a5f3eb;
+  --strongCyan: hsl(174, 86%, 45%);
+  --lightGrayishRed: hsl(14, 92%, 95%);
+  --lightRed: hsl(15, 100%, 70%);
+  --paleBlue: rgb(189, 204, 255);
+
+  /*Neutral Colors*/
+  --white: hsl(0, 0%, 100%);
+  --veryPaleBlue: #eceff9;
+  --lightGrayishBlue: hsl(223, 50%, 87%);
+  --grayishBlue: hsl(225, 20%, 60%);
+  --darkDesaturatedBlue: hsl(227, 35%, 25%);
+
+  /*Font*/
+  --font: "Manrope", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: var(--font);
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.header {
+  width: 100%;
+  min-height: 50vh;
+  background-color: var(--veryPaleBlue);
+  border-bottom-left-radius: 100px;
+  background-image: url("../images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center top 10vh;
+  background-size: fit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vh;
+  gap: 1rem;
+  text-align: center;
+}
+.title {
+  font-size: 1.5rem;
+  color: var(--darkDesaturatedBlue);
+}
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--grayishBlue);
+  width: 50%;
+}
+.card {
+  width: 90%;
+  height: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  transform: translateY(-30%);
+  -webkit-box-shadow: 5px 5px 15px 5px hsl(223, 50%, 87%);
+  box-shadow: 5px 5px 15px 5px hsl(223, 50%, 87%);
+}
+.firstSection { 
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardFirstSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--lightGrayishBlue);
+  padding:1rem 0;
+}
+.views {
+  color: var(--grayishBlue);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.label {
+  width: 80%;
+}
+.slider {
+  width: 100%;
+  height: 0.75rem;
+  margin: 2rem 0;
+  background: rgb(165, 243, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(165, 243, 235, 1) 0%,
+    rgba(219, 240, 246, 1) 50%,
+    rgba(236, 239, 249, 1) 51%
+  );
+  border-radius: 50px;
+  position: relative;
+}
+
+.slider::-moz-range-thumb {
+  width: 1rem;
+  padding: 0.5rem;
+  background-image: url("../images/icon-slider.svg");
+  background-color: var(--strongCyan);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid var(--strongCyan);
+  -webkit-box-shadow: 0px 7px 8px 1px #a5f3eb;
+  box-shadow: 0px 7px 8px 1px #a5f3eb;
+}
+.slider:hover::-moz-range-thumb {
+  -webkit-box-shadow: 0px 7px 8px 5px #a5f3eb;
+  box-shadow: 0px 7px 8px 5px #a5f3eb;
+  
+}
+.priceSlider {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.priceSlider .price {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.priceSlider .month {
+  font-weight: 400;
+  color: var(--grayishBlue);
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2rem 0;
+}
+.month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.month label {
+  font-size: 0.9rem;
+  color: var(--grayishBlue);
+  position: relative;
+}
+input[type='checkbox'] {
+  appearance: none;
+  background-color: var(--white);
+  margin: 0;
+  font: inherit;
+  color: var(--white);
+  width: 1.15em;
+  height: 1.15em;
+  border:none;
+  border-radius: 100px;
+  cursor: pointer;
+  transform:translateY(1.5px);
+  z-index: 110;
+  
+}
+
+
+
+
+.month label:before{
+  content:"";
+  width:50%;
+  max-width: 80px;
+  height: 25px;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  border-radius: 100px;
+  left: 104%;
+  background-color: var(--lightGrayishBlue);
+  transition: all 200ms linear;
+}
+.month label:hover:before{
+  background-color: var(--softCyan);
+}
+
+.year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.year p {
+  font-size: 0.8rem;
+  color: var(--grayishBlue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.year p .discount {
+  display: none;
+}
+.year p .percentage {
+  background-color: var(--lightGrayishRed);
+  padding: 0.2rem 0.5rem;
+  border-radius: 50px;
+  color: var(--lightRed);
+}
+
+.secondSection{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top:2rem;
+}
+.pros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.pros p{
+    color:var(--grayishBlue);
+    font-size:.9rem;
+  
+}
+.pros figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pros figure img{
+    width: 100%;
+}
+.start{
+    margin-top: 2rem;
+    color:var(--paleBlue);
+    background-color: var(--darkDesaturatedBlue);
+    padding: .75rem 2.5rem ;
+    border-radius: 50px;
+    font-size: .9rem;
+    text-decoration: none;
+}
+.start:hover{
+ color:var(--white);
+}
+
+@media screen and (min-width: 1000px) {
+  
+    .card{
+        width: 50%;
+    }
+    .firstSection { 
+        
+         display: grid;
+        grid-template-columns: 0.6fr 1.4fr 1.4fr 0.6fr 0.7fr 1.3fr 1.7fr 0.3fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          ". views views . . priceSlider priceSlider ."
+          ". views views . . priceSlider priceSlider ."
+          ". . . . . . . ."
+          ". label label label label label label ."
+          ". label label label label label label ."
+          ". . . . . . . .";
+      }
+      
+      .views { grid-area: views; font-size:1.5rem;}
+      
+      .priceSlider { 
+          grid-area: priceSlider;
+     }
+     .priceSlider {
+       
+        display: flex;
+        justify-content: flex-end;
+        gap: 0;  
+   
+      }
+       
+      .priceSlider .month{
+        width: 70px;
+    }
+
+      
+      .label { grid-area: label; width: 100%;}
+      
+  
+      .month {
+        width: 50%;
+  
+      }
+      .month label {
+        font-size: 1rem;
+ 
+      }
+
+
+      
+      .year {
+        width: 50%;
+     
+      }
+      .year p {
+      
+        font-size: 1rem;
+        gap:1rem;
+    
+      }
+      .year p .discount {
+        display: block;
+      
+      }
+      .year p .percentage {
+        display:flex; 
+        gap: .5rem;
+        align-items: center;
+
+      }
+      .secondSection{
+
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: start;
+      }
+      .prosSection{
+          width: 50%;
+          height: 100%;
+    
+          display: flex;
+          flex-direction: column;
+          justify-content:center;
+          align-items: start;
+         
+      }
+      .start{      
+
+            transform:translateY(-50%);
+
+      }
+}

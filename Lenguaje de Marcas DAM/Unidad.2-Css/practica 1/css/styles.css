@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+
+@font-face {
+    font-family: "Cabin";
+    src: url("../fonts/cabin/cabin-sketch.woff") format("woff"),
+    url("../fonts/cabin/CabinSketch-Bold.ttf") format("ttf"),
+    url("../fonts/cabin/CabinSketch-Regular.ttf") format("ttf");
+}
+@font-face {
+    font-family: "Gabriela";
+    src: url("../fonts/gabriela/Gabriela-Regular.ttf") format("ttf"),
+    url("../fonts/gabriela/gabriela.woff") format("woff");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(214, 214, 214);
+
+}
+
+#header{
+    width: 100%;
+
+}
+#header h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgb(99, 49, 99);
+    font-family: 'Cabin Sketch', Cabin,cursive;
+}
+#section{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 100%;
+}
+#section article{
+    width: 80%;   
+    margin: 2vh 0;
+
+}
+section .futbol {
+    border: 3px solid #CC5500;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius:20px 
+}
+section .futbol h2{
+    width: 100%;
+    background-color: #CC5500;
+    border-top-right-radius:16px ;
+ 
+    font-size: 2rem;
+    padding:2vh 1vh;
+    color: white;
+    font-family:Gabriela ;
+    font-weight: 600;
+    
+    
+}
+section .futbol .datos{
+    background-color: #DB5B00;
+    padding: 1vh;
+}
+section .futbol .vida{
+  
+    background-color: #FFA566;
+    padding: 2vh 1vh;
+    border-bottom-right-radius: 17px ;
+    border-bottom-left-radius: 17px ;
+    
+}
+
+section .literatura{
+   border: 3px solid #E501E6    ;
+   border-bottom-right-radius: 20px ;
+   border-top-left-radius: 20px;
+   
+
+}
+
+
+
+section .literatura h2{
+   width: 100%;
+    font-size: 2rem;
+    background-color: #E501E6;
+    color: white;
+    font-family:Gabriela ;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    padding: 2vh 1vh;
+    
+}
+section .literatura .datos{
+    width: 100%;
+    background-color: #FE80FE;
+    padding: 1vh;
+
+}
+section .literatura .vida{
+    width: 100%;
+    padding: 2vh 1vh;
+    background-color: #FECCFF;
+    
+   border-bottom-right-radius: 20px ;
+
+}

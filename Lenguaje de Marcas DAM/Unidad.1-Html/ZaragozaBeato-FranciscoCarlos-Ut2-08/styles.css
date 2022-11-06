@@ -1,0 +1,358 @@
+@font-face {
+  font-family: ballpark-eot;
+  src: url(polices/ballpark.eot);
+}
+@font-face {
+  font-family: ballpark-svg;
+  src: url(polices/ballpark.svg);
+}
+@font-face {
+  font-family: ballpark-ttf;
+  src: url(polices/ballpark.ttf);
+}
+@font-face {
+  font-family: ballpark-woff;
+  src: url(polices/ballpark.woff);
+}
+@font-face {
+  font-family: dayrom-eot;
+  src: url(polices/dayrom.eot);
+}
+@font-face {
+  font-family: dayrom-svg;
+  src: url(polices/dayrom.svg);
+}
+@font-face {
+  font-family: dayrom-ttf;
+  src: url(polices/dayrom.ttf);
+}
+@font-face {
+  font-family: dayrom-woff;
+  src: url(polices/dayrom.woff);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #fff8d9;
+  --sidebar-bg-color: #706b64;
+  --main-font: "ballpark-eot", "ballpark-svg", "ballpark-ttf", "ballpark-woff";
+  --secondary-font: "dayrom-eot", "dayrom-svg", "dayrom-ttf", "dayrom-woff";
+  --color-font: #212121;
+  --friends-color: #b97777;
+  font-size: 16px;
+}
+
+body {
+  min-width: 100%;
+  min-height: 130vh;
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.container {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+#header {
+  width: 100%;
+  height: 40vh;
+
+  position: relative;
+}
+#header .title {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+  padding-top: 1vh;
+  position: relative;
+}
+
+#header .title h1 {
+  align-self: flex-end;
+  margin-left: 5px;
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  position: relative;
+}
+#nav .list {
+  display: flex;
+}
+#nav .list .list-items {
+  list-style: none;
+  padding: 0 2vh;
+}
+#nav .list .list-items a {
+  font-size: 1.5rem;
+  color: var(--color-font);
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+}
+
+#nav p {
+  font-size: 1.2rem;
+  font-family: var(--secondary-font);
+  color: var(--color-font);
+}
+hr {
+  margin: 0 auto;
+  width: 92vw;
+
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+
+.separateur {
+  width: 100%;
+  justify-self: center;
+  height: 3px;
+  position: absolute;
+  margin: 0 auto;
+}
+.card-header {
+  width: 100%;
+  height: 70%;
+  display: flex;
+
+  align-items: flex-end;
+  background-image: url(images/sanfrancisco.jpg),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  margin-top: 2vh;
+}
+
+.card-header .card-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212121d8;
+  padding: 2vh 0;
+
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.card-header .card-content p {
+  font-family: var(--secondary-font);
+  color: var(--main-bg-color);
+  margin-left: 1vw;
+}
+.card-header .card-content a {
+  padding: 0.5vh 2vh;
+  background: rgb(202, 42, 42);
+  margin-right: 1vw;
+  border-radius: 10px;
+  color: var(--main-bg-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#main {
+  margin-top: 8vh;
+  width: 70%;
+  min-height: 50%;
+}
+
+#main #section #article {
+  width: 100%;
+  height: 100%;
+}
+#main #section #article .title-article {
+  width: 100%;
+  display: flex;
+  padding-bottom: 2vh;
+}
+#main #section #article .title-article h2 {
+  align-self: flex-end;
+  font-family: var(--secondary-font);
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding-left: 1vh;
+}
+#main #section #article p {
+  padding: 1vh;
+  font-family: var(--secondary-font);
+}
+#aside {
+  width: 25%;
+  min-height: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 10vh;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-color: var(--sidebar-bg-color);
+  position: relative;
+}
+
+#aside h3 {
+  align-self: start;
+  justify-self: flex-start;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  padding: 2vh 1vh;
+  color: white;
+}
+#aside .zozor-classe {
+  border: 2.5px solid black;
+  margin-bottom: 2vh;
+}
+
+#aside .text-aside {
+  width: 95%;
+}
+#aside .text-aside p {
+  padding: 5px;
+  color: white;
+  font-family: var(--secondary-font);
+}
+
+#aside .social-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 1vh;
+}
+#aside .social-media img {
+  padding: 5px;
+}
+#aside .bulle {
+  position: absolute;
+  top: 25%;
+  left: -10px;
+
+  /*transform: translateX(-40px);*/
+}
+#footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  align-items: center;
+}
+
+#footer .section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .section .footer-first-section {
+  width: 25%;
+}
+#footer .section .footer-first-section h3 {
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 1vh;
+}
+#footer .section .footer-first-section p {
+  font-size: 1.1rem;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  padding-bottom: 0.5vh;
+}
+
+#footer .section .footer-second-section {
+  width: 25%;
+
+
+}
+#footer .section .footer-second-section h3{
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding-bottom: 1vh;
+ 
+ 
+}
+
+
+
+
+#footer .images{ 
+
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 1vh;
+
+}
+#footer .images img{
+    border: 2px solid black;
+    margin-right: 4px;
+}
+
+
+
+#footer .section .footer-third-section {
+  width: 25%;
+
+
+    
+}
+
+#footer .section .footer-third-section h3{
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    text-transform: uppercase;
+  
+    padding-bottom: 1vh;
+} 
+
+#footer .section .footer-third-section .list {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  list-style: url(images/ico_liensexterne.png);
+  font-size: 1rem;
+  font-family: var(--secondary-font);
+  color:var(--friends-color);
+}
+#footer .list .first-list{
+    margin-right: 5vh;
+  
+}
+
+
