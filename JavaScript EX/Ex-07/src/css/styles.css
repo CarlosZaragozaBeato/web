@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
+
+:root{
+    /*Color*/
+    --color:#876445;
+    --color2:#FFF1BD;
+    --color3:#483434;
+    --color4:#FFE6BC;
+    /*Font*/
+    --font:'Cormorant Garamond', serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:var(--font);
+}
+
+body{
+    width:100%;
+    min-height:100vh;
+    background-image:linear-gradient(180deg, rgb(255, 255, 255) 80%, rgba(0, 0, 0, 0.30));
+    
+}
+.section .article .visible{
+    opacity:1;
+    background-color:var(--color3);
+    transform:translatey(0%);
+
+}
+.main{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--color2);
+    padding:5vh 0;
+
+}
+
+.section{ 
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:5vh;
+}
+h1{ color:var(--color); font-size:3rem; text-align:center;}
+.article{
+    width:80%;
+   
+  
+    display:flex;
+    flex-direction: column;
+
+
+  
+    
+}
+.question{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:var(--color3);
+    padding:1rem;
+
+}
+.question h2{
+    font-weight: 400;
+    color:var(--color2);
+}
+
+.answer{
+
+    opacity:0;
+    display:block;
+    transition:all 300ms linear;
+    padding:1rem;
+    transform:translatey(-10%);
+}
+.image{
+    border:1px solid var(--color);
+    padding:  0.1rem .2rem;
+    cursor: pointer;
+}
+.img{
+    cursor:pointer;
+    transition:all 200ms linear;
+}
+
+.image .rotate{
+    animation:rotate 300ms linear;
+}
+.image .rotate2{
+    animation:rotate2 300ms linear;
+}
+@keyframes rotate {
+    0%{ transform:rotate(0deg); }
+    100%{transform:rotate(360deg);}
+
+}
+@keyframes rotate2 {
+    0%{ transform:rotate(360deg); }
+    100%{transform:rotate(0deg);}
+
+}
+
+
+p{ color:var(--color4);}
+
+@media screen and (max-width:1000px){
+
+    .article{
+        width:90vw;
+
+    }
+    .answer{
+        display:none;
+    }
+    .visible{
+        display:flex;
+    }
+}
+
